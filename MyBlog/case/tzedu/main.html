@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<link rel="stylesheet" href="iconfont/iconfont.css">
+    <style type="text/css">
+        body{background:#f6f6f6;}
+        .fl{float: left;}
+        .fr{float: right;}
+        .clearfix:after{content: "";clear: both;display: block;}
+        .clear{clear: both;}
+        .price{color: #cd0001;font-size: 16px;}
+        .hovercheckR{margin-left: -1240px;transition: 0.3s;}
+        .hovercheckL{margin-left: 0px;transition: 0.3s;}
+        .searchhov:{box-shadow:0 0 5px rgba(0,0,0,0.6);background: #fff;}
+        .inputhov:{background: #fff;transition: all 0.4s ease;}
+		.c-hover:hover{color:#cd0001;}
+        .lihover:hover{box-shadow:0 0 5px #333;transform:scale(0.99);transition: 0.5s;}
+        .ahover:hover{color: #fff;transition: 0.5s;}
+        .checkhover:hover{color: #cd0001;border-bottom: 4px solid #cd0001;transition: 0.4s;}
+        .btnhover:hover{background: #cd0001;color: #fff;}
+        /*S header*/
+        .header{height: 55px;background: #fff;border-bottom: 1xp solid #f1f1f1;box-shadow: 0px 0px 5px rgba(0,0,0,0.2);padding-top: 15px;margin-bottom: 15px;min-width:1220px;}
+        .header .header-nav{width: 1220px;margin: 0 auto;}
+        .header .header-nav .header-logo{width: 250px;height: 40px;}
+        .header .header-nav .nav-list{width: 950px;height: 40px;}
+        .header .header-nav .nav-list ul li{line-height: 40px;margin-right: 20px;font-size: 18px;}
+        .header .header-nav .nav-list .nav-search{width: 260px;height: 40px;background: #eee;border-radius: 5px;transition: all 0.4s ease;}
+
+        .header .header-nav .nav-list .nav-search i{line-height: 40px;margin-left: 10px;}
+        .header .header-nav .nav-list .nav-search input{width: 190px;height: 18px;margin-top: 10px;margin-left:10px;border:none;outline: none;text-indent: 10px;border-left: 1px solid #c3c0c0;background: #eee;transition: all 0.4s ease;}
+        :-ms-input-placeholder{text-align: right;}
+        ::-webkit-input-placeholder{text-align: right;}
+        :-moz-placeholder{text-align: right;}
+        ::-moz-placeholder{text-align: right;}
+        /*E header*/
+
+		/*S content*/
+        .m-t-b{background: #EBEBEB;}
+        .m-b-behid{display: none;position: absolute;top: 0px;right: 0px;background:#ebebeb;color:#dad4da;transition:0.3s;}
+		.main{width: 1220px;height: 100%;margin:30px auto;}
+		.main .main-banner{width: 1220px;height: 500px;}
+
+		.main .m-preferential-box{width: 1220px;height: 300px;margin-top:60px;}
+		.main .m-preferential-box .m-box-title{width: 1220px;height: 30px;}
+        .main .m-preferential-box .m-box-title h2{line-height: 30px;height: 30px;}
+		.main .m-preferential-box .m-box-title .m-t-btn{position:relative;width: 90px;height: 30px;}
+        .main .m-preferential-box .m-box-title .m-t-btn span{width:45px;text-align: center;line-height: 30px;color: #dad4d4;}
+        .main .m-preferential-box .m-course-list{overflow: hidden;}
+        .main .m-preferential-box .m-course-list ul{width: 1488px;height:225px;margin-top: 20px;}
+        .main .m-preferential-box .m-course-list ul li{float: left;width: 225px;height: 225px;background: #fff;margin-right: 23px;}
+
+        /*banner*/
+        .zindex9{z-index: 9;}
+        .zindex99{z-index: 99;}
+        .zindex999{z-index: 999;}
+        .bahover:hover{color: #cd0001;}
+        .blihover:hover{cursor: pointer;background: rgba(100,100,100,0.5);}
+        .main-banner{position: relative;width: 1220px;height:489px;margin: 30px auto; }
+
+        .main-banner .main-banner-img{position: absolute;top: 0;left: 0;width: 1220px;height: 489px;}
+        .main-banner .main-banner-img ul li{display: none;position: absolute;top: 0;left: 0;}
+        .main-banner .main-banner-img ul li:nth-child(1){display: block;}
+        .main-banner .main-nav{position:absolute;width: 229px;height: 489px;background: rgba(50,50,50,0.6);z-index: 999;}
+        .main-banner .main-nav li{width: 199px;height: 37px;color: #fff;font-size: 14px;line-height: 37px;padding-left: 30px;}
+        .main-banner .main-nav li span{margin-left:120px;}
+        .main-banner .main-nav li .subnav{display: none;position: absolute;top: 0;left: 229px;width: 198px;height: 489px;background: #fff;}
+        .main-banner .main-nav li .subnav a{padding-left: 50px;}
+        .main-banner .btn-wrap{position: absolute;left: 229px;width: 991px;height: 489px;}
+        .main-banner .btn-wrap:hover #b-left{display: block;}
+        .main-banner .btn-wrap:hover #b-right{display: block;}
+        #banner-btn{position: absolute;bottom: 20px;left: 420px;width: 99px;height: 6px;z-index: 999;}
+        #banner-btn li{float: left;width: 23px;height: 6px;background: rgba(100,100,100,0.6);margin:0 5px;}
+        #banner-btn li:nth-child(1){background: #fff;}
+        #banner-btn li:hover{cursor: pointer;}
+        #b-left,#b-right{display: none;position:absolute;top: 50%;margin-top: -30px;width: 40px;height: 59px;font-size: 40px;color: #fff;text-align: center;line-height: 60px;transitiz-index: 999;}
+        #b-left a,#b-right a{color: #fff;}
+        #b-left{left: 0;}
+        #b-left:hover{background: rgba(0,0,0,0.5);transition: 0.4s;}
+        #b-right{right: 0;}
+        #b-right:hover{background: rgba(0,0,0,0.5);transition: 0.4s;}
+
+        /*IT*/
+        .checker{color: #cd0001;border-bottom: 4px solid #cd0001;}
+        .main .m-IT-box{width: 1220px;}
+        .main .m-IT-box .adver{width: 225px;height: 472px;}
+        .main .m-IT-box .IT-course-cont{position:relative;width: 745px;height: 472px;overflow: hidden;}
+        .main .m-IT-box .IT-course-cont ul{poaition:absolute;top:0;left:0;width: 780px;height: 742px;}
+        .main .m-IT-box .IT-course-cont ul li{float:left;width: 225px;height: 224px;background:#fff;margin-right: 32px;margin-bottom: 20px;}
+        .main .m-IT-box .IT-course-hot{width: 225px;height: 472px;}
+        .main .m-IT-box .IT-course-hot h3{width: 187px;border: 1px solid #cd0001;color: #cd0001;}
+		/*E content*/
+
+        /*S footer*/
+        .footer{height: 290px;min-width: 1220px;background: #383838;}
+        .footer .footer-wrap{width: 1220px;height: 203px;background: #383838;margin: 0 auto;}
+        .footer .footer-wrap .footer-nav{width: 1000px;height: 203px;}
+        .footer .footer-wrap .footer-nav .footer-nav-list{width: 167px;}
+        .footer .footer-wrap .footer-phone .f-btn{width: 136px;height: 37px;background: #f45555;border-radius: 5px;text-align: center;line-height: 37px;margin-top: 20px;margin-left: 10px;}
+        .footer .f-f-wrap{height: 82px;min-width: 1220px;background: #313131;}
+        .footer .f-f-wrap .f-wrap{width: 1220px;height: 82px;margin: 0 auto;}
+        /*E footer*/
+    </style>
+</head>
+<body>
+     <!-- Star header -->
+    <div class="header">
+        <div class="header-nav clearfix">
+            <div class="header-logo fl">
+                <img src="images/head_logo.png" width="148" height="37" alt="logo">
+            </div>
+            <div class="nav-list fr ">
+                <ul class="fl">
+                    <li class="fl"><a href="#" class="c-hover">首页</a></li>
+                    <li class="fl"><a href="#" class="c-hover">课程直播</a></li>
+                    <li class="fl"><a href="#" class="c-hover">客户端</a></li>
+                    <li class="fl"><a href="#" class="c-hover">社区</a></li>
+                    <li class="fl"><a href="#" class="c-hover">宣传视频</a></li>
+                    <li class="fl"><a href="#" class="c-hover">合伙人招募</a></li>
+                    <li class="fl"><a href="#" class="c-hover">公司介绍</a></li>
+                </ul>
+                <div class="nav-search fr" id="binput">
+                    <a href="javascript:void(0);"><i class="iconfont icon-sousuo-sousuo fl"></i></a>
+                    <input class="fl" id="input" type="text" name="" placeholder="搜索相关课程" />
+                    <i class="iconfont icon-icondayu fr mar-r5"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+	<!--S main-->
+	<div class="main">
+		<!--S Banner-->
+		<div class="main-banner">
+        <div class="main-banner-img">
+            <ul id="b-img">
+                <li><img src="images/1.jpg" width="1220" height="489" alt="" /></li>
+                <li ><img src="images/2.jpg" width="1220" height="489" alt="" /></li>
+                <li ><img src="images/3.jpg" width="1220" height="489" alt="" /></li>
+            </ul>
+        </div>
+        <ul class="main-nav" id="mnav">
+            <li>
+                软件培训<span>&gt</span>
+                <div class="subnav">
+                    <a class="bahover" href="javascript:void(0);">JAVA</a><br />
+                    <a class="bahover" href="javascript:void(0);">Web前端</a><br />
+                    <a class="bahover" href="javascript:void(0);">PHP</a><br />
+                    <a class="bahover" href="javascript:void(0);">python</a><br />
+                    <a class="bahover" href="javascript:void(0);">安卓</a><br />
+                    <a class="bahover" href="javascript:void(0);">C++</a><br />
+                    <a class="bahover" href="javascript:void(0);">软件测试</a><br />
+                    <a class="bahover" href="javascript:void(0);">.net</a><br />
+                    <a class="bahover" href="javascript:void(0);">IOS</a><br />
+                    <a class="bahover" href="javascript:void(0);">大数据</a><br />
+                    <a class="bahover" href="javascript:void(0);">嵌入式</a><br />
+                </div>
+            </li>
+            <li>
+                视觉设计<span>&gt</span>
+                <div class="subnav">
+                   <a class="bahover" href="javascript:void(0);">平面设计</a><br />
+                    <a class="bahover" href="javascript:void(0);">插画</a><br />
+                    <a class="bahover" href="javascript:void(0);">网页设计</a><br />
+                    <a class="bahover" href="javascript:void(0);">电商设计</a><br />
+                    <a class="bahover" href="javascript:void(0);">UI设计</a><br />
+                    <a class="bahover" href="javascript:void(0);">C++</a><br />
+                    <a class="bahover" href="javascript:void(0);">软件测试</a><br />
+                    <a class="bahover" href="javascript:void(0);">.net</a><br />
+                    <a class="bahover" href="javascript:void(0);">IOS</a><br />
+                    <a class="bahover" href="javascript:void(0);">大数据</a><br />
+                    <a class="bahover" href="javascript:void(0);">嵌入式</a><br />
+                </div>
+            </li>
+            <li>
+                营销培训<span>&gt</span>
+                <div class="subnav">
+                   <a class="bahover" href="javascript:void(0);">SEO</a><br />
+                    <a class="bahover" href="javascript:void(0);">网络营销</a><br />
+                    <a class="bahover" href="javascript:void(0);">微信运营</a><br />
+                    <a class="bahover" href="javascript:void(0);">python</a><br />
+                    <a class="bahover" href="javascript:void(0);">安卓</a><br />
+
+                </div>
+            </li>
+            <li>
+                工业设计<span>&gt</span>
+                <div class="subnav">
+                   <a class="bahover" href="javascript:void(0);">五金模具设计</a><br />
+                    <a class="bahover" href="javascript:void(0);">塑胶模具设计</a><br />
+                    <a class="bahover" href="javascript:void(0);">CAD</a><br />
+                    <a class="bahover" href="javascript:void(0);">模流分析</a><br />
+
+                </div>
+            </li>
+            <li>
+                游戏动漫<span>&gt</span>
+                <div class="subnav">
+                   <a class="bahover" href="javascript:void(0);">3D游戏次世代设计</a><br />
+
+                </div>
+            </li>
+            <li>
+                电商培训<span>&gt</span>
+                <div class="subnav">
+                    <a class="bahover" href="javascript:void(0);">JAVA</a><br />
+                    <a class="bahover" href="javascript:void(0);">Web前端</a><br />
+                    <a class="bahover" href="javascript:void(0);">PHP</a><br />
+                    <a class="bahover" href="javascript:void(0);">python</a><br />
+                    <a class="bahover" href="javascript:void(0);">安卓</a><br />
+                    <a class="bahover" href="javascript:void(0);">C++</a><br />
+                    <a class="bahover" href="javascript:void(0);">软件测试</a><br />
+                    <a class="bahover" href="javascript:void(0);">.net</a><br />
+
+                </div>
+            </li>
+            <li>
+                语言学习<span>&gt</span>
+                <div class="subnav">
+                   <a class="bahover" href="javascript:void(0);">JAVA</a><br />
+                    <a class="bahover" href="javascript:void(0);">Web前端</a><br />
+                    <a class="bahover" href="javascript:void(0);">PHP</a><br />
+                    <a class="bahover" href="javascript:void(0);">python</a><br />
+                    <a class="bahover" href="javascript:void(0);">安卓</a><br />
+
+            </li>
+            <li>
+                室内设计<span>&gt</span>
+                <div class="subnav">
+                    <a class="bahover" href="javascript:void(0);">JAVA</a><br />
+                    <a class="bahover" href="javascript:void(0);">Web前端</a><br />
+                    <a class="bahover" href="javascript:void(0);">PHP</a><br />
+                    <a class="bahover" href="javascript:void(0);">python</a><br />
+                    <a class="bahover" href="javascript:void(0);">安卓</a><br />
+                    <a class="bahover" href="javascript:void(0);">C++</a><br />
+                    <a class="bahover" href="javascript:void(0);">软件测试</a><br />
+                    <a class="bahover" href="javascript:void(0);">.net</a><br />
+                    <a class="bahover" href="javascript:void(0);">IOS</a><br />
+
+                </div>
+            </li>
+            <li>
+                职场人文<span>&gt</span>
+                <div class="subnav">
+                    <a class="bahover" href="javascript:void(0);">JAVA</a><br />
+                    <a class="bahover" href="javascript:void(0);">Web前端</a><br />
+                    <a class="bahover" href="javascript:void(0);">PHP</a><br />
+                    <a class="bahover" href="javascript:void(0);">python</a><br />
+                    <a class="bahover" href="javascript:void(0);">安卓</a><br />
+                    <a class="bahover" href="javascript:void(0);">C++</a><br />
+                    <a class="bahover" href="javascript:void(0);">软件测试</a><br />
+
+                </div>
+            </li>
+            <li>
+                艺术创作<span>&gt</span>
+                <div class="subnav">
+                    <a class="bahover" href="javascript:void(0);">JAVA</a><br />
+                    <a class="bahover" href="javascript:void(0);">Web前端</a><br />
+                    <a class="bahover" href="javascript:void(0);">PHP</a><br />
+                    <a class="bahover" href="javascript:void(0);">python</a><br />
+                    <a class="bahover" href="javascript:void(0);">安卓</a><br />
+                    <a class="bahover" href="javascript:void(0);">C++</a><br />
+                    <a class="bahover" href="javascript:void(0);">软件测试</a><br />
+                    <a class="bahover" href="javascript:void(0);">.net</a><br />
+                    <a class="bahover" href="javascript:void(0);">IOS</a><br />
+                    <a class="bahover" href="javascript:void(0);">大数据</a><br />
+                    <a class="bahover" href="javascript:void(0);">嵌入式</a><br />
+                </div>
+            </li>
+            <li>
+                亲子课堂<span>&gt</span>
+                <div class="subnav">
+                    <a class="bahover" href="javascript:void(0);">JAVA</a><br />
+                    <a class="bahover" href="javascript:void(0);">Web前端</a><br />
+                    <a class="bahover" href="javascript:void(0);">PHP</a><br />
+                    <a class="bahover" href="javascript:void(0);">python</a><br />
+                    <a class="bahover" href="javascript:void(0);">安卓</a><br />
+                    <a class="bahover" href="javascript:void(0);">C++</a><br />
+                    <a class="bahover" href="javascript:void(0);">软件测试</a><br />
+                    <a class="bahover" href="javascript:void(0);">.net</a><br />
+                    <a class="bahover" href="javascript:void(0);">IOS</a><br />
+                    <a class="bahover" href="javascript:void(0);">大数据</a><br />
+                    <a class="bahover" href="javascript:void(0);">嵌入式</a><br />
+                </div>
+            </li>
+            <li>
+                农业种植<span>&gt</span>
+                <div class="subnav">
+                    <a class="bahover" href="javascript:void(0);">JAVA</a><br />
+                    <a class="bahover" href="javascript:void(0);">Web前端</a><br />
+                    <a class="bahover" href="javascript:void(0);">PHP</a><br />
+                    <a class="bahover" href="javascript:void(0);">python</a><br />
+                    <a class="bahover" href="javascript:void(0);">安卓</a><br />
+                    <a class="bahover" href="javascript:void(0);">C++</a><br />
+                    <a class="bahover" href="javascript:void(0);">软件测试</a><br />
+                    <a class="bahover" href="javascript:void(0);">.net</a><br />
+                    <a class="bahover" href="javascript:void(0);">IOS</a><br />
+                    <a class="bahover" href="javascript:void(0);">大数据</a><br />
+                    <a class="bahover" href="javascript:void(0);">嵌入式</a><br />
+                </div>
+            </li>
+            <li>
+                升学考研<span>&gt</span>
+                <div class="subnav">
+                    <a class="bahover" href="javascript:void(0);">JAVA</a><br />
+                    <a class="bahover" href="javascript:void(0);">Web前端</a><br />
+                    <a class="bahover" href="javascript:void(0);">PHP</a><br />
+                    <a class="bahover" href="javascript:void(0);">python</a><br />
+                    <a class="bahover" href="javascript:void(0);">安卓</a><br />
+                    <a class="bahover" href="javascript:void(0);">C++</a><br />
+                    <a class="bahover" href="javascript:void(0);">软件测试</a><br />
+                    <a class="bahover" href="javascript:void(0);">.net</a><br />
+                    <a class="bahover" href="javascript:void(0);">IOS</a><br />
+                    <a class="bahover" href="javascript:void(0);">大数据</a><br />
+                    <a class="bahover" href="javascript:void(0);">嵌入式</a><br />
+                </div>
+            </li>
+        </ul>
+        <div class="btn-wrap">
+            <ul id ="banner-btn">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div id="b-left"><a href="javascript:void(0);">&lt</a></div>
+            <div id="b-right"><a href="javascript:void(0);">&gt</a></div>
+        </div>
+    </div>
+		<!--E Banner-->
+		<!--S jrtj-->
+		<div class="main-jrtj mar-t20 clearfix">
+			<div class="fl">
+				<img src="images/recommend_bgd.jpg" width="225" height="174" alt=""/>
+			</div>
+			<ul class="main-jrtj-img fr">
+				<li class="fl mar-l25">
+					<a href="###"><img src="images/4.jpg" width="306" height="174" alt=""/></a>
+				</li>
+				<li class="fl mar-l25">
+					<a href="###"><img src="images/5.jpg" width="306" height="174" alt=""/></a>
+				</li>
+				<li class="fl mar-l25">
+					<a href="###"><img src="images/2.jpg" width="306" height="174" alt=""/></a>
+				</li>
+			</ul>
+		</div>
+		<!--E jrtj-->
+		<!--S 特惠区-->
+		<div class="m-preferential-box clearfix">
+			<div class="m-box-title ">
+				<h2 class="fl">特惠课程</h2>
+				<div class="m-t-btn fr ">
+					<a href="javascript:void(0);"><span id="m-b-l" class="fl f-siz24 m-t-b ">&lt</span></a>
+					<a href="javascript:void(0);"><span id="m-b-r" class="fr f-siz24 bgc-fff btnhover">&gt</span></a>
+				</div>
+			</div>
+			<div class="m-course-list">
+				<ul id="c-list">
+					<li class="lihover">
+                        <img src="images/6.jpg" width="225" height="154" alt="" />
+                        <div class="course-details mar-t10">
+                            <p class="mar-l5">高精度模型造型课程【精英班】</p>
+                            <span class="price mar-l5">4980元</span>
+                        </div>
+                    </li>
+					<li class="lihover">
+                        <img src="images/7.jpg" width="225" height="154" alt="" />
+                        <div class="course-details mar-t10">
+                            <p class="mar-l5">高精度模型造型课程【精英班】</p>
+                            <span class="price mar-l5">4980元</span>
+                        </div>
+                    </li>
+					<li class="lihover">
+                        <img src="images/8.jpg" width="225" height="154" alt="" />
+                        <div class="course-details mar-t10">
+                            <p class="mar-l5">高精度模型造型课程【精英班】</p>
+                            <span class="price mar-l5">4980元</span>
+                        </div>
+                    </li>
+					<li class="lihover">
+                        <img src="images/9.jpg" width="225" height="154" alt="" />
+                        <div class="course-details mar-t10">
+                            <p class="mar-l5">高精度模型造型课程【精英班】</p>
+                            <span class="price mar-l5">4980元</span>
+                        </div>
+                    </li>
+					<li class="lihover">
+                        <img src="images/10.png" width="225" height="154" alt="" />
+                        <div class="course-details mar-t10">
+                            <p class="mar-l5">高精度模型造型课程【精英班】</p>
+                            <span class="price mar-l5">4980元</span>
+                        </div>
+                    </li>
+					<li class="lihover">
+                        <img src="images/11.jpg" width="225" height="154" alt="" />
+                        <div class="course-details mar-t10">
+                            <p class="mar-l5">高精度模型造型课程【精英班】</p>
+                            <span class="price mar-l5">4980元</span>
+                        </div>
+                    </li>
+				</ul>
+			</div>
+		</div>
+		<!--E 特惠区-->
+        <!--S 互联网-->
+        <div class="m-IT-box clearfix mar-b30">
+            <div class="m-box-title clearfix mar-b30">
+                <h2 class="fl">IT/互联网</h2>
+                <ul class="fr mar-r5" id="check">
+                    <li class="fl mar-l10 checker checkhover"><a href="javascript:void(0);">精选</a></li>
+                    <li class="fl mar-l10 checkhover"> <a href="javascript:void(0);">软件/网络</a></li>
+                    <li class="fl mar-l10 checkhover"><a href="javascript:void(0);">营销</a></li>
+                    <li class="fl mar-l10 checkhover"><a href="javascript:void(0);">游戏动漫</a></li>
+                    <li class="fl mar-l10 checkhover"><a href="javascript:void(0);">电商</a></li>
+                </ul>
+            </div>
+            <div class="clearfix">
+                <div class ="adver fl mar-r20"><img src="images/11.jpg" width="225" height="472" alt="" /></div>
+                <div class ="IT-course-cont fl" id="cont">
+                    <ul class="dis-b pos-a">
+                        <li class="lihover">
+                            <img src="images/12.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">111潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/13.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/4.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/5.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/6.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/7.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                    <ul class="dis-n pos-a">
+                        <li class="lihover">
+                            <img src="images/12.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">22222潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/12.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/10.png" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/13.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/10.png" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/12.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                    <ul class="dis-n pos-a">
+                        <li class="lihover">
+                            <img src="images/9.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">33333潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/4.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/5.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/6.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/7.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/8.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                    <ul class="dis-n pos-a">
+                        <li class="lihover">
+                            <img src="images/12.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">44444潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/7.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/8.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/9.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/7.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/8.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                    <ul class="dis-n pos-a">
+                        <li class="lihover">
+                            <img src="images/7.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">55555潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/8.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/9.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/13.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/5.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/4.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="IT-course-hot fr bgc-fff">
+                    <h3 class="t-a-c pad-5 mar-t20 mar-l15">热门课程排行榜</h3>
+                    <ul>
+                        <li class="mar-l15 mar-t10"><span class="c-f0a f-siz18 mar-r5">1.</span>
+                        <a href="javascript:void(0);" class="c-hover">SEO优化系统班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-fa0 f-siz18 mar-r5">2.</span>
+                        <a href="javascript:void(0);" class="c-hover">IOS高薪入职班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-af0 f-siz18 mar-r5">3.</span>
+                        <a href="javascript:void(0);" class="c-hover">网络营销VIP系统班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-eee f-siz18 mar-r5">4.</span>
+                        <a href="javascript:void(0);" class="c-hover">网络营销VIP班报名补齐</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-eee f-siz18 mar-r5">5.</span>
+                        <a href="javascript:void(0);" class="c-hover">JAVA工程师全能班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-eee f-siz18 mar-r5">6.</span>
+                        <a href="javascript:void(0);" class="c-hover">python全套系统学习班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-eee f-siz18 mar-r5">7.</span>
+                        <a href="javascript:void(0);" class="c-hover">课程二三特惠</a>/li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--E 互联网-->
+        <!--S 教育-->
+        <div class="m-IT-box clearfix">
+            <div class="m-box-title clearfix mar-b30">
+                <h2 class="fl">职业/教育</h2>
+                <ul class="fr mar-r5" id="checkedu">
+                    <li class="fl mar-l10 checker checkhover"><a href="javascript:void(0);">精选</a></li>
+                    <li class="fl mar-l10 checkhover"> <a href="javascript:void(0);">工业</a></li>
+                    <li class="fl mar-l10 checkhover"><a href="javascript:void(0);"> 语言</a></li>
+                    <li class="fl mar-l10 checkhover"><a href="javascript:void(0);">室内</a></li>
+                    <li class="fl mar-l10 checkhover"><a href="javascript:void(0);">设计</a></li>
+                </ul>
+            </div>
+            <div class="clearfix">
+                <div class ="adver fl mar-r20"><img src="images/11.jpg" width="225" height="472" alt="" /></div>
+                <div class ="IT-course-cont fl" id="contedu">
+                    <ul class="dis-b pos-a">
+                        <li class="lihover">
+                            <img src="images/13.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">111潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/6.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/8.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/4.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/9.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/13.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                    <ul class="dis-n pos-a">
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">22222潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                    <ul class="dis-n pos-a">
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">33333潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                    <ul class="dis-n pos-a">
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">44444潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                    <ul class="dis-n pos-a">
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">55555潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="IT-course-hot fr bgc-fff">
+                    <h3 class="t-a-c pad-5 mar-t20 mar-l15">热门课程排行榜</h3>
+                    <ul>
+                        <li class="mar-l15 mar-t10"><span class="c-f0a f-siz18 mar-r5">1.</span>
+                        <a href="javascript:void(0);" class="c-hover">SEO优化系统班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-fa0 f-siz18 mar-r5">2.</span>
+                        <a href="javascript:void(0);" class="c-hover">IOS高薪入职班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-af0 f-siz18 mar-r5">3.</span>
+                        <a href="javascript:void(0);" class="c-hover">网络营销VIP系统班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-eee f-siz18 mar-r5">4.</span>
+                        <a href="javascript:void(0);" class="c-hover">网络营销VIP班报名补齐</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-eee f-siz18 mar-r5">5.</span>
+                        <a href="javascript:void(0);" class="c-hover">JAVA工程师全能班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-eee f-siz18 mar-r5">6.</span>
+                        <a href="javascript:void(0);" class="c-hover">python全套系统学习班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-eee f-siz18 mar-r5">7.</span>
+                        <a href="javascript:void(0);" class="c-hover">课程二三特惠</a>/li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--E 教育-->
+        <!--S 兴趣生活-->
+        <div class="m-IT-box clearfix">
+            <div class="m-box-title clearfix mar-b30">
+                <h2 class="fl">职业/教育</h2>
+                <ul class="fr mar-r5" id="checklife">
+                    <li class="fl mar-l10 checker checkhover"><a href="javascript:void(0);">精选</a></li>
+                    <li class="fl mar-l10 checkhover"> <a href="javascript:void(0);">工业</a></li>
+                    <li class="fl mar-l10 checkhover"><a href="javascript:void(0);"> 语言</a></li>
+                    <li class="fl mar-l10 checkhover"><a href="javascript:void(0);">室内</a></li>
+                    <li class="fl mar-l10 checkhover"><a href="javascript:void(0);">设计</a></li>
+                </ul>
+            </div>
+            <div class="clearfix">
+                <div class ="adver fl mar-r20"><img src="images/11.jpg" width="225" height="472" alt="" /></div>
+                <div class ="IT-course-cont fl" id="contlife">
+                    <ul class="dis-b pos-a">
+                        <li class="lihover">
+                            <img src="images/4.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">111潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/8.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/9.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/5.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/9.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="images/8.jpg" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                    <ul class="dis-n pos-a">
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">22222潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                    <ul class="dis-n pos-a">
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">33333潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                    <ul class="dis-n pos-a">
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">44444潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                    <ul class="dis-n pos-a">
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">55555潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                        <li class="lihover">
+                            <img src="" width="225" height="154" alt="" />
+                            <p class="mar-t10 mar-l5">潭州教育创业指导管理VIP课程</p>
+                            <span class="price mar-l5">3860元</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="IT-course-hot fr bgc-fff">
+                    <h3 class="t-a-c pad-5 mar-t20 mar-l15">热门课程排行榜</h3>
+                    <ul>
+                        <li class="mar-l15 mar-t10"><span class="c-f0a f-siz18 mar-r5">1.</span>
+                        <a href="javascript:void(0);" class="c-hover">SEO优化系统班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-fa0 f-siz18 mar-r5">2.</span>
+                        <a href="javascript:void(0);" class="c-hover">IOS高薪入职班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-af0 f-siz18 mar-r5">3.</span>
+                        <a href="javascript:void(0);" class="c-hover">网络营销VIP系统班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-eee f-siz18 mar-r5">4.</span>
+                        <a href="javascript:void(0);" class="c-hover">网络营销VIP班报名补齐</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-eee f-siz18 mar-r5">5.</span>
+                        <a href="javascript:void(0);" class="c-hover">JAVA工程师全能班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-eee f-siz18 mar-r5">6.</span>
+                        <a href="javascript:void(0);" class="c-hover">python全套系统学习班</a></li>
+                        <li class="mar-l15 mar-t10 c-hover"><span class="c-eee f-siz18 mar-r5">7.</span>
+                        <a href="javascript:void(0);" class="c-hover">课程二三特惠</a>/li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--E 兴趣生活-->
+	</div>
+	<!--E main-->
+    <!--S footer-->
+    <div class="footer">
+        <div class="footer-wrap clearfix">
+            <div class="footer-nav fl clearfix">
+                <div class="footer-nav-list fl mar-r10">
+                    <p class="f-siz16 c-fff pad-t20 pad-b20">如何购买</p>
+                    <ul>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何注册与登录</a></li>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何购买课程</a></li>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何填写学籍表</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-list fl mar-r10">
+                    <p class="f-siz16 c-fff pad-t20 pad-b20">如何购买</p>
+                    <ul>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何注册与登录</a></li>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何购买课程</a></li>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何填写学籍表</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-nav-list fl mar-r10">
+                    <p class="f-siz16 c-fff pad-t20 pad-b20">如何购买</p>
+                    <ul>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何注册与登录</a></li>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何购买课程</a></li>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何填写学籍表</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-nav-list fl mar-r10">
+                    <p class="f-siz16 c-fff pad-t20 pad-b20">如何购买</p>
+                    <ul>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何注册与登录</a></li>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何购买课程</a></li>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何填写学籍表</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-nav-list fl mar-r10">
+                    <p class="f-siz16 c-fff pad-t20 pad-b20">如何购买</p>
+                    <ul>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何注册与登录</a></li>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何购买课程</a></li>
+                        <li class="mar-b10"><a href="javascript:void(0);" class="c-777 ahover">如何填写学籍表</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-phone fr pad-25 mar-r10">
+                <h3 class="f-siz22 c-fff mar-b10">400-009-6359</h3>
+                <p class="t-a-c c-777">
+                    周一至周日 8:00-18:00 </br>
+                    （仅收市话费）
+                </p>
+                <p></p>
+                <div class="f-btn"><a href="javascript:void(0)" class="c-fff dis-b">12小时在线客服</a></div>
+            </div>
+        </div>
+        <div class="f-f-wrap">
+            <div class="f-wrap clearfix">
+                <div class="footer-logo fl"><a href="#"><img src="#" width="50" height="82" alt="logo" /></a></div>
+                <div class="footer-con fl">
+                    <p class="mar-l20 mar-t15">
+                        <a href="javascript:void(0);" class="ahover c-777 mar-r10">潭州教育商城</a>
+                        <a href="javascript:void(0);" class="ahover c-777 mar-r10"> 潭州教育官网</a>
+                        <a href="javascript:void(0);" class="ahover c-777 mar-r10">潭州教育招聘</a>
+                        <a href="javascript:void(0);" class="ahover c-777 mar-r10"> 天猫旗舰店城</a>
+                        <a href="javascript:void(0);" class="ahover c-777 mar-r10"> SEO研究中心城</a>
+                        <a href="javascript:void(0);" class="ahover c-777 mar-r10"> 潭州教育考试在线</a>
+                        <a href="javascript:void(0);" class="ahover c-777 mar-r10"> 潭州教育博客</a>
+                        <a href="javascript:void(0);" class="ahover c-777 mar-r10"> 时光钥匙官网</a>
+                        <a href="javascript:void(0);" class="ahover c-777 mar-r10"> 全影网</a>
+                    </p>
+                    <p class="c-777 mar-l20">Copyright © 2013-2017 All Rights Reserved 版权所有：湖南潭州教育网络科技有限公司 备案号：备15014315号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--E footer-->
+    <script type="text/javascript">
+    window.onload = function(){
+        /*头部input获取焦点和失去焦点事件*/
+        var input = document.getElementById("input");
+        var binput = document.getElementById("binput");
+        binput.onmouseover = function(){
+            binput.style.background = "#fff";
+            binput.style.boxShadow = "0 0 5px rgba(0,0,0,0.6)";
+            input.style.background = "#fff";
+        }
+        binput.onmouseout = function (){
+            binput.style.background = "#eee";
+            binput.style.boxShadow = "0 0 0 rgba(0,0,0,0.6)";
+            input.style.background = "#eee";
+        }
+        input.onfocus = function(){
+            binput.style.background = "#fff";
+            binput.style.boxShadow = "0 0 5px rgba(0,0,0,0.6)";
+            input.style.background = "#fff";
+            binput.onmouseout = null;
+        }
+        input.onblur = function(){
+            binput.style.background = "#eee";
+            binput.style.boxShadow = "0 0 0 rgba(0,0,0,0.6)";
+            input.style.background = "#eee";
+            binput.onmouseout = function (){
+                binput.style.background = "#eee";
+                binput.style.boxShadow = "0 0 0 rgba(0,0,0,0.6)";
+                input.style.background = "#eee";
+            }
+        }
+        /*特惠课程滑动切换*/
+        var mbl= document.getElementById("m-b-l");
+        var mbr= document.getElementById("m-b-r");
+        var clist= document.getElementById("c-list");
+        mbr.onclick = function(){
+            mbr.className = "fr f-siz24 m-t-b";
+            mbl.className = "fl f-siz24 bgc-fff btnhover";
+            clist.className = "hovercheckR";
+        }
+        mbl.onclick = function(){
+            mbl.className = "fl f-siz24 m-t-b";
+            mbr.className = "fr f-siz24 bgc-fff btnhover";
+            clist.className = "hovercheckL";
+        }
+
+        /*右侧选项卡切换*/
+        /*互联网*/
+        var check =document.getElementById("check")
+        var li = check.getElementsByTagName("li");
+        var cont =document.getElementById("cont");
+        var ul = cont.getElementsByTagName("ul");
+        for(var i=0;i<li.length;i++){
+            li[i].index = i;
+            li[i].onclick = function(){
+                for(var j=0;j<li.length;j++){
+                    li[j].className = "fl mar-l10 checkhover";
+                    ul[j].style.display = "none";
+                    this.className = "fl mar-l10 checker checkhover";
+                }
+                ul[this.index].style.display = "block";
+            }
+        }
+        /*教育*/
+        var checkedu =document.getElementById("checkedu")
+        var eli = checkedu.getElementsByTagName("li");
+        var contedu =document.getElementById("contedu");
+        var eul = contedu.getElementsByTagName("ul");
+        for(var i=0;i<li.length;i++){
+            eli[i].index = i;
+            eli[i].onclick = function(){
+                for(var j=0;j<li.length;j++){
+                    eli[j].className = "fl mar-l10 checkhover";
+                    eul[j].style.display = "none";
+                    this.className = "fl mar-l10 checker checkhover";
+                }
+               eul[this.index].style.display = "block";
+            }
+        }
+        /*兴趣生活*/
+         var checklife =document.getElementById("checklife")
+        var lli = checklife.getElementsByTagName("li");
+        var contlife =document.getElementById("contlife");
+        var lul = contlife.getElementsByTagName("ul");
+        for(var i=0;i<li.length;i++){
+            lli[i].index = i;
+            lli[i].onclick = function(){
+                for(var j=0;j<li.length;j++){
+                    lli[j].className = "fl mar-l10 checkhover";
+                    lul[j].style.display = "none";
+                    this.className = "fl mar-l10 checker checkhover";
+                }
+               lul[this.index].style.display = "block";
+            }
+        }
+        /*navbar*/
+            var mnav = document.getElementById("mnav");
+            var nli = mnav.getElementsByTagName("li");
+            var subnav = document.getElementsByClassName("subnav");
+            for(var i=0;i<nli.length;i++){
+                nli[i].index = i;
+                nli[i].onmouseover = function(){
+                    this.className = "blihover";
+                    subnav[this.index].style.display = "block";
+                }
+            }
+            for(var i=0;i<nli.length;i++){
+                nli[i].index = i;
+                nli[i].onmouseout = function(){
+                    this.className = "blihover";
+                    subnav[this.index].style.display = "none";
+                }
+            }
+            /*banner btn*/
+            var btn = document.getElementById("banner-btn");
+            var bimg = document.getElementById("b-img");
+            var bli = btn.getElementsByTagName("li");
+            var ili = bimg.getElementsByTagName("li");
+            var num = 0;
+            /*btn*/
+            for(var i=0;i<bli.length;i++){
+                bli[i].index = i;
+                bli[i].onmouseover = function(){
+                    for(var j=0;j<bli.length;j++){
+                        bli[j].style.background = "rgba(100,100,100,0.6)";
+                        ili[j].style.display = "none";
+                    }
+                    this.style.background = "#fff";
+                    ili[this.index].style.display = "block";
+                    num = this.index;
+                }
+            }
+            /*左右按钮滑动*/
+            var btnl = document.getElementById("b-left");
+            var btnr = document.getElementById("b-right");
+            for(var i=0;i<bli.length;i++){
+                bli[i].index = i;
+                btnr.onclick = function(){
+                    num++;
+                    if(num>2){
+                        num = 0;
+                        banner();
+                    }else{
+                        banner();
+                    }
+                }
+                btnl.onclick = function(){
+                    num--;
+                    if(num<0){
+                        num = 2;
+                        banner();
+                    }else{
+                        banner();
+                    }
+                }
+            }
+            /*定时器*/
+            var time = setInterval(function(){
+                num++;
+                if(num>2){
+                    num = 0;
+                    banner();
+                }else{
+                    banner();
+                }
+            }, 4000);
+            function banner(){
+                for(var j=0;j<bli.length;j++){
+                    bli[j].style.background = "rgba(100,100,100,0.6)";
+                    ili[j].style.display = "none";
+                    }
+                    bli[num].style.background = "#fff";
+                    ili[num].style.display = "block";
+            }
+    }
+    </script>
+</body>
+</html>
