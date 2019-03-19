@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>个人博客</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/crowd.css">
+<link rel="stylesheet" href="iconfont/iconfont.css">
+<style type="text/css">
+    html{overflow-x: hidden;overflow-y: hidden;}
+    .f-weight{font-weight: 600;}
+    .wrap{width: 100%;height:1000px;background: #000;/*background: url(images/bg.gif) no-repeat center;background-position: 0 0;background-size: 100% 100%;min-width: 900px;*/}
+    .wrap h1{font-size: 36px;color: #ccc;text-align: center;padding: 30px;animation: blink 5s linear infinite;}
+    @keyframes blink{
+                0%{text-shadow:0 0 0px #9546FF;}
+                25%{text-shadow:0 0 10px red;}
+                50%{text-shadow:0 0 20px #FB68D1;}
+                75%{text-shadow:0 0 10px #FFC02C;}
+                100%{text-shadow:0 0 0px #2BFF29;}
+            }
+    /*S 左侧桌面图标*/
+    .wrap .content{position: relative;/*height: 1000px;*/margin: 0 auto;z-index: 2;}
+    .wrap .content .icon-left{position: fixed;left: 0;width: 100px;height: 600px;margin-left: 15px;}
+    .wrap .content .icon-left li{position: absolute;width: 100px;height: 100px;color: #fff;border: 1px solid rgba(0,0,0,0);margin: auto 0;border-radius: 5px;}
+    .wrap .content .icon-left li:nth-child(2){top: 100px;}
+    .wrap .content .icon-left li:nth-child(3){top: 200px;}
+    .wrap .content .icon-left li:nth-child(4){top: 300px;}
+    .wrap .content .icon-left li:nth-child(5){top: 400px;}
+    .wrap .content .icon-left li:hover{background: rgba(135,135,135,0.5);border: 1px solid #ccc;}
+    .wrap .content .icon-left li a{display: block;position: absolute;z-index: -1;}
+    .wrap .content .icon-left li .icon{display: inline-block;width: 56px;height: 60px;font-size: 40px;text-align: center;background: rgba(135,135,135,0.3);border-radius: 5px;border: 1px solid rgba(190,190,190,.5);}
+    /*E 左侧桌面图标*/
+    /*S 右侧日历*/
+    .wrap .content #calendar{position: absolute;right: 0;width: 180px;height: 90px;border: 1px dashed #ccc;padding: 5px;border-radius: 5px;cursor: move;z-index: 2;}
+        /*左边万年历*/
+    .wrap .content #calendar .calendar-left{position: absolute;width: 50px;height: 70px;border: 1px solid red;border-radius: 5px;margin-top: 10px;padding-top: 5px;}
+    .wrap .content #calendar .calendar-left ul{width: 50px;height: 10px;}
+    .wrap .content #calendar .calendar-left ul li{float: left;width: 4px;height: 4px;border: 1px solid red;border-radius: 50%;margin: 3px;}
+    .wrap .content #calendar .calendar-left .main{width: 44px;height: 44px;background: red;margin: 8px 3px;}
+
+        /*右边具体的时间*/
+    .wrap .content #calendar .calendar-right{position: absolute;right: 0;width: 110px;height: 75px;}
+    /*E 右侧日历*/
+
+    /*隐藏浏览器滚动条*/
+    ::-webkit-scrollbar{display:none;}
+
+</style>
+</head>
+<body onselectstart = "return false">
+    <div class="wrap bg">
+        <canvas id="display"></canvas>
+        <div id="blachole"></div>
+        <h1>Stay true to the original self</h1>
+        <div class="content">
+            <!-- 左侧桌面图标 -->
+            <ul class="icon-left" id="desk">
+                <li><a href="case/tzedu/main.html" target="_blank"><span class="icon iconfont icon-datubiao-geren mar-t10 mar-l20 c-fa0"></span><br><span class="mar-l20 f-weight c-eee">网页布局1</span></a></li>
+                <li><a href="case/txNews/index.html" target="_blank"><span class="icon iconfont icon-jinengpingjia mar-t10 mar-l20 c-af0"></span><br><span class="mar-l20 f-weight c-eee">网页布局2</span></a></li>
+                <li><a href="case/3DBanner/index2.html" target="_blank"><span class="icon iconfont icon-zuopin mar-t10 mar-l20 c-a0f"></span><br><span class="mar-l20 f-weight c-eee">3D-Banner</span></a></li>
+                <li><a href="case/Banner/taobaoBanner.html" target="_blank"><span class="icon iconfont icon-zuopinzhanshi mar-t10 mar-l20 c-fa0"></span><br><span class="mar-l20 f-weight c-eee">无缝Banner</span></a></li>
+                <li><a href="case/ball/index.html" target="_blank"><span class="icon iconfont icon-canjiabisaizuopin-1 mar-t10 mar-l20 c-0fa"></span><br><span class="mar-l20 f-weight c-eee">运动的小球</span></a></li>
+            </ul>
+            <!-- 右侧万年历 -->
+            <div id="calendar" class="clearfix">
+                <div class="calendar-left fl">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="main">
+                        <p class="t-a-c c-eee" id="main-month"></p>
+                        <p class="t-a-c c-eee" id="main-day"></p>
+                    </div>
+                </div>
+                <div class="calendar-right fr">
+                    <p class="t-a-l c-ccc mar-t5" id="timer"></p>
+                    <p class="t-a-l c-ccc" id="dater"></p>
+                    <p class="t-a-l c-ccc" id="weekend"></p>
+                </div>
+                <div id="calendar-close"></div>
+            </div>
+        </div>
+        <div></div>>
+    </div>
+
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/constellation.js"></script>
+    <script src="js/move.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            var timer = document.getElementById("timer");
+            var dater = document.getElementById("dater");
+            var m_month = document.getElementById("main-month");
+            var m_day = document.getElementById("main-day");
+            var weekend = document.getElementById("weekend");
+            var weekArr = new Array("日", "一", "二", "三", "四", "五", "六");
+            var monthArr = ["一","二","三","四","五","六","七","八","九","十","十一","十二"];
+            var monthArr2 = ["01","02","03","04","05","06","07","08","09","10","11","12"];
+            //日历时间获取
+            setInterval(function(){
+                var time = new Date();
+                var year = time.getFullYear();
+                var month = time.getMonth();
+                var day = time.getDate();
+                var day1 = time.getDate();
+                var week = time.getDay();
+                var hour = time.getHours();
+                var min = time.getMinutes();
+                var sec = time.getSeconds();
+                // console.log(year+"年"+(month+1)+"月"+day+"日"+hour+"时"+min+"分"+sec+"秒"+"星期"+week);
+                if(day<10)day = "0" + day;
+                if(hour<10)hour = "0" + hour;
+                if(min<10)min = "0" + min;
+                if(sec<10)sec = "0" + sec;
+                timer.innerHTML = hour+"："+min+"："+sec;
+                dater.innerHTML = year+"年"+monthArr2[month]+"月"+day+"日";
+                weekend.innerHTML = "星期"+weekArr[week];
+                m_month.innerHTML = monthArr[month]+"月";
+                m_day.innerHTML =day1;
+            },1000)
+            /*日历拖拽*/
+            var box = document.getElementById("calendar");
+            move(box);
+                /*禁止内容被选取*/
+            box.onselectstart = function(){
+                return false;
+            }
+
+            /*桌面图标拖拽*/
+            var desk = document.getElementById("desk");
+            var li = desk.getElementsByTagName("li");
+            var href = ["case/tzedu/main.html","case/txNews/index.html","case/3DBanner/index2.html","case/Banner/taobaoBanner.html","case/ball/index.html"];
+            for(var i=0;i<li.length;i++){
+                li[i].index = i;
+                li[i].onmouseup = function(){
+                    window.open(href[this.index]);
+                }
+                move(li[i]);
+            }
+            /*拖拽封装*/
+            function move(dom){
+                dom.onmousedown = function(e){
+                    var e = e || window.event;
+                    var x1 = getXY(e).x;
+                    var y1 = getXY(e).y;
+                    var ctop = dom.offsetTop;
+                    var cleft = dom.offsetLeft;
+                    var maxW = window.innerWidth - this.offsetWidth;
+                    var maxH = window.innerHeight - this.offsetHeight;
+                    document.onmousemove = function(e){
+                        var e = e || window.event;
+                        var x2 = getXY(e).x;
+                        var y2 = getXY(e).y;
+                        var ct = y2 - y1 + ctop;
+                        var cl = x2 - x1 + cleft;
+                        if(ct >= maxH)ct = maxH;
+                        if(ct <= 0)ct = 0;
+                        if(cl >= maxW)cl = maxW;
+                        if(cl <= 0)cl = 0;
+                        dom.style.top = ct + "px";
+                        dom.style.left = cl + "px";
+                    }
+                    document.onmouseup = function(){
+                        this.onmousedown = null;
+                        this.onmousemove = null;
+                    }
+                }
+                /*获取绝对高度*/
+                function getXY(e){
+                    var e = e || window.event;
+                    var x = 0;
+                    var y = 0;
+                    if(e.pageX){
+                        x = e.pageX;
+                        y = e.pageY;
+                    }else{
+                        var ctop = document.documentElement.scrollTop || document.body.scrollTop;
+                        var cleft = document.documentElement.scrollLeft || document.body.scrollLeft;
+                        x = e.clientX + cleft;
+                        y = e.clientY + ctop;
+                    }
+                    return {x:x,y:y};
+                }
+            }
+        }
+    </script>
+</body>
+</html>

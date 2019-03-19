@@ -1,0 +1,2422 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>txNews</title>
+  <style type="text/css">
+	*{margin:0px;padding:0px;}
+	body{font-size:12px;font-family:"微软雅黑";color:#000;}
+	a{text-decoration:none;color:#000;}
+	li{list-style:none;}
+
+	.fl{float:left;}
+	.fr{float:right;}
+	.clearfix:after{content:"";clear:both;display:block;}
+	.borderB{border-bottom:2px solid #F0F0F0;}
+	.borderR{border-right:1px solid #959595;}
+	.n-share{width:20px;height:20px;background:url("images/icons_data.png") 0 -30px no-repeat;}
+	.dot{display:inline-block;width:18px;height:20px;background:url("images/icons_data.png")8px -1131px no-repeat;}
+	.t-label{position:absolute;bottom:15px;right:0px;width:670px;height:20px;}
+	.n-label{position:absolute;bottom:16px;right:0px;width:530px;height:20px;}
+	.fontHover:hover{color:#cd0001;cursor:pointer;}
+	.bghover:hover{background:#fafafa;}
+	.img{transition:0.3s;}
+	.imgHover:hover{transform:scale(1.1,1.1);transition:0.3s;cursor:pointer;}
+	.overfl{overflow:hidden;}
+	.vertical{vertical-align:middle;}
+	.dropBtn{display:inline-block;width:10px;height:10px;background:url("images/dropBtn.png")
+	no-repeat;vertical-align:middle;margin-left:3px;}
+
+	/*S top*/
+	.wrap{width:100%:height:9410px;background:#fff;}
+	.wrap .content{width:1000px;margin:0 auto;}
+	.wrap .content .top{width:1000px;height:38px;}
+	.wrap .content .top .topL{width:506px;height:38px;}
+	.wrap .content .top .topL li{float:left;height:40px;margin-right:20px;text-align:center;line-height:38px;}
+	.wrap .content .top  li a{color:#6a6a6a;}
+	.wrap .content .top  li a:hover{color:#000;}
+	.wrap .content .top .topL li:nth-child(8) span{display:inline-block;margin-right:10px;}
+
+	.wrap .content .top .topR{width:184px;height:38px;}
+	.wrap .content .top .topR li{float:left;width:35px;height:35px;}
+	.wrap .content .top .topR li:nth-child(1){width:77px;height:40px;text-align:center;line-height:38px;border-left:1px solid #E6E6E6;border-right:1px solid #E6E6E6;}
+	.wrap .content .top .topR li:nth-child(2){margin-top:1px;background:url("images/bgBtn.jpg") 2px 0px;}
+	.wrap .content .top .topR li:nth-child(2):hover{background:url("images/bgBtn.jpg") 2px 140px;cursor:pointer;}
+	.wrap .content .top .topR li:nth-child(3){background:url("images/bgBtn.jpg") 2px -33px;}
+	.wrap .content .top .topR li:nth-child(3):hover{background:url("images/bgBtn.jpg") 2px -313px;cursor:pointer;}
+	.wrap .content .top .topR li:nth-child(4){background:url("images/bgBtn.jpg") 2px -68px;}
+	.wrap .content .top .topR li:nth-child(4):hover{background:url("images/bgBtn.jpg") 2px 72px;cursor:pointer;}
+
+	/*E top*/
+
+	/*S c-top*/
+	.wrap .c-top{position:absolute;top:38px;width:100%;height:165px;background:url("images/c-top_bg.jpg") no-repeat top;z-index:-1;}
+	.wrap .content .ad{width:1000px;height:90px;margin:10px auto;}
+	.wrap .content .c-rss a{display:block;}
+	.wrap .content .c-rss a:hover{text-decoration:underline;}
+	.wrap .content .c-rss{height:30px;margin-top:13px;margin-left:10px;font-size:14px;}
+	.wrap .content .c-rss .c-icon{display:inline-block;width:20px;height:20px;background:url("images/icons.png") 3px -1072px;}
+	.wrap .content .c-find{position:relative;height:28px;}
+	.wrap .content input{position:absolute;top:10px;left:-170px;height:26px;border:1px solid #d4d4d4;border-right:0;outline:none;}
+	.wrap .content .c-search{display:inline-block;width:48px;height:26px;background:#e23838 url("images/find.png")17px 8px no-repeat;border:1px solid red;margin-top:10px;cursor:pointer;}
+	.wrap .w-nav{position:absolute;top:199px;width:100%;height:38px;border-top:3px solid #CB0D0D;border-bottom:2px solid #D9D9D9;z-index:-1;}
+	.wrap .c-nav ul{width:1000px;height:40px;}
+	.wrap .c-nav ul li{float:left;width:71px;height:40px;text-align:center;line-height:40px;font-size:14px;}
+	.wrap .c-nav ul li:hover a{display:block;color:#fff;background:#DC0000;}
+	.wrap .c-nav ul li:nth-child(1) a{display:block;color:#fff;background:#DC0000;}
+
+	/*E c-top*/
+
+	/*S c-left*/
+	.wrap .content .c-left{position:relative;width:670px;height:100%;}
+	.wrap .content .c-left .c-header{width:1000px;height:21px;margin-top:20px;}
+	.wrap .content .c-left .c-header .icons-data{
+	display:inline-block;width:30px;height:21px;background:url("images/icons_data.png") 0px 2px;}
+	.wrap .content .c-left .c-header p span{font-size:14px;margin-right:10px;}
+	.wrap .content .c-left .share{position:absolute;top:70px;right:0px;width:19px;height:15px;background:url("images/icons_data.png") 1px -32px;}
+	.wrap .content .c-left h2{font-size:24px;margin:20px 0;}
+	.wrap .content .c-left .slist ul li{font-size:14px;margin-bottom:10px;}
+	.wrap .content .c-left .slist ul li span{display:inline-block;width:18px;height:20px;background:url("images/icons_data.png")0px -1131px no-repeat;}
+
+	.wrap .c-left .c-news{position:relative;width:670px;height:120px;}
+	.wrap .c-left .c-news .n-img img{margin-top:16px;transition:0.3s;}
+	.wrap .c-left .c-news .n-tit{margin-top:12px;margin-left:20px;font-size:20px;}
+
+
+
+	.wrap .content .c-left .c-innews{width:670px;height:16px;padding-top:4px;margin-top:10px;margin-bottom:10px;}
+	.wrap .content .c-left .c-innews li{float:left;height:12px;padding-left:10px;padding-right:10px;line-height:12px;color:#959595;}
+	.wrap .content .c-left .c-innews li:hover{color:#cd0001;cursor:pointer;}
+
+	.wrap .content .c-left .subNav{position:relative;height:2550px;}
+	.wrap .content .c-left .subNav > div{display: none;position:absolute;top:40px;left:0px;}
+	.wrap .content .c-left .subNav ul{background:#fafafa;height:41px;}
+	.lbottom{border-bottom:1px solid #ececec;}
+	.wrap .content .c-left .subNav ul li{float:left;width:83px;height:40px;font-size:14px;text-align:center;line-height:40px;border-bottom:1px solid #ececec;}
+	.wrap .content .c-left .subNav ul .sn-on{height:36px;line-height:33px;border-top:4px solid #cd0001;border-left:2px solid #ececec;border-right:2px solid #ececec;border-bottom:none;color:#cd0001;background:#fff;cursor:pointer;}
+
+	.wrap .content .c-left .l-con{position:relative;width:670px;height:224px;}
+	.wrap .content .c-left .l-con p{font-size:20px;padding:10px 0;}
+	.wrap .content .c-left .l-con ul{width:670px;height:133px;}
+	.wrap .content .c-left .l-con ul li{width:200px;height:133px;}
+	.wrap .content .c-left .l-con ul li:nth-child(2){margin-left:36px;}
+
+	/*S  视频区*/
+	.wrap .content .c-left .l-c-tit{position:relative;width:670px;height:30px;border-bottom:3px solid #9e9e9e;padding-top:30px;margin-bottom:20px;z-index:1;}
+	.wrap .content .c-left .l-c-tit div{position:absolute;bottom:-3px;left:0px;background:#fafafa;padding:3px;z-index:2;}
+	.wrap .content .c-left .l-c-tit span{font-size:20px;border-bottom:3px solid #cd0001;}
+	.wrap .content .c-left .l-c-tit a{float:right;border-bottom:3px solid #9e9e9e;font-size:14px;color:#9e9e9e;line-height:30px;}
+	.wrap .content .c-left .l-c-tit a:hover{color:#000;}
+
+	.wrap .content .c-left .l-c-con{width:670px;}
+	.wrap .content .c-left .l-c-con ul{width:690px;}
+	.wrap .content .c-left .l-c-con ul li{float:left;width:154px;height:140px;margin-right:18px;margin-bottom:10px;}
+	.wrap .content .c-left .l-c-con ul li div{position:relative;}
+	.wrap .content .c-left .l-c-con ul li .play{position:absolute;bottom:10px;left:10px;width:25px;height:25px;background:url("images/icons_data.png")-2px 217px;transition:0.3s;opacity:0;}
+	.wrap .content .c-left .l-c-con ul li:hover p{color:#cd0001;}
+	.wrap .content .c-left .l-c-con ul li:hover .play{transition:0.3s;opacity:1;}
+	.wrap .content .c-left .l-c-con ul li p{font-size:14px;height:40px;padding:0 6px;}
+	/*E 视频区*/
+
+	/*S 军事*/
+	.wrap .content .c-left .l-war{width:670px;height:500px;}
+	.wrap .content .c-left .l-war .l-w-img{width:290px;height:500px;}
+	.wrap .content .c-left .l-war .l-w-img li a:nth-child(1){display:block;width:130px;height:104px;overflow:hidden;}
+	.wrap .content .c-left .l-war .l-w-img li{float:left;width:130px;height:147px;margin-right:13px;}
+	.wrap .content .c-left .l-war .l-w-img li:nth-child(1){width:275px;height:200px;}
+	.wrap .content .c-left .l-war .l-w-img li:nth-child(1) a{display:block;width:275px;font-size:16px;text-align:center;padding:3px 0;}
+	.wrap .content .c-left .l-war .l-w-img li:nth-child(1) .w-img-a{display:block;width:275px;height:142px;overflow:hidden;}
+	.wrap .content .c-left .l-war .l-w-list{width:380px;height:500px;}
+	.wrap .content .c-left .l-war .l-w-list li{height:54px;border-bottom:1px solid #f0f0f0;font-size:16px;line-height:54px;}
+	/*E 军事*/
+
+	/*S 历史*/
+	.wrap .content .c-left .l-c-history{width:670px;height:210px;}
+	.wrap .content .c-left .l-c-history .h-img{width:275px;hieght:210px;}
+	.wrap .content .c-left .l-c-history .h-img li:nth-child(1){width:275px;height:168px;}
+	.wrap .content .c-left .l-c-history .h-img li:nth-child(2){height:24px;line-height:24px;font-size:16px;margin-top:10px;}
+	.wrap .content .c-left .l-c-history .h-tit{width:380px;height:210px;}
+	.wrap .content .c-left .l-c-history .h-tit li{height:40px;border-bottom:1px solid #f0f0f0;font-size:16px;line-height:40px;}
+	/*E 历史*/
+
+	/*S l-footer*/
+	.wrap .content .c-left .l-footer{position:relative;width:670px;width:260px;margin-top:20px;}
+	.wrap .content .c-left .l-footer ul{width:325px;height:260px;}
+	.wrap .content .c-left .l-footer ul li{margin-bottom:10px;font-size:14px;}
+	.wrap .content .c-left .l-footer ul li:nth-child(1){position:relative;width:320px;height:40px;border-bottom:3px solid #9e9e9e;margin-bottom:5px;}
+	.wrap .content .c-left .l-footer ul li .l-f-tit{position:absolute;background:#fafafa;padding:3px;margin-bottom:3px;z-index:2;}
+	.wrap .content .c-left .l-footer ul li .l-f-tit span{font-size:18px;line-height:40px;border-bottom:3px solid #cd0001;padding:5px;}
+	.wrap .content .c-left .l-footer ul li:nth-child(2){font-size:16px;margin-top:20px;}
+	.wrap .content .c-left .l-footer ul li:nth-child(3) div{width:130px;height:85px;}
+	.wrap .content .c-left .l-footer ul li:nth-child(3) .l-f-r{width:162px;line-height:20px;color:#bbb;font-size:12px;}
+	.wrap .content .c-left .l-footer ul li .dot{display:inline-block;width:18px;height:20px;background:url("images/icons_data.png")5px -1131px no-repeat;}
+	.wrap .content .c-left .l-footer ul:nth-child(2){position:absolute;top:0;left:343px;}
+	/*E l-footer*/
+
+	/*E c-left*/
+
+	/*S c-right*/
+	.wrap .content .c-right{width:300px;border:1px soid green;margin-top:70px;}
+	.wrap .content .c-right .c-r-tit{width:300px;height:310px;background:#fafafa;overflow:hidden;}
+	.wrap .content .c-right .c-r-tit .c-r-logo{height:25px;border-left:4px solid #cd0001;margin-top:20px;margin-left:5px;padding-left:5px;}
+	.wrap .content .c-right .c-r-banner .c-r-logo{height:25px;border-left:4px solid #cd0001;margin-top:20px;margin-left:5px;padding-left:5px;}
+	.wrap .content .c-right .c-r-tit ul{width:280px;height:260px;padding:10px;margin-top:10px;}
+	.wrap .content .c-right .c-r-tit ul li{font-size:14px;}
+	.wrap .content .c-right .c-r-tit ul li:nth-child(1){font-size:16px;margin-bottom:10px;}
+	.wrap .content .c-right .c-r-tit ul li:nth-child(2) span{display:inline-block;width:130px;height:100px;font-size:12px;color:#acacac;line-height:20px;vertical-align:top;margin-left:3px;}
+		/*影响力*/
+	.wrap .content .c-right .c-r-banner{width: 300px;height: 240px;background: #fafafa;}
+	.wrap .content .c-right .c-r-banner .c-r-ban{position: relative;width: 300px;height: 200px;margin-top: 10px;}
+	.wrap .content .c-right .c-r-banner .c-r-ban #c-r-b-img li{display: none;position: absolute;}
+	.wrap .content .c-right .c-r-banner #c-r-b-btn{position: absolute;bottom: 3px;left: 50%;margin-left: -35px;width:70px;height:15px;text-align: center;line-height: 15px;}
+	.wrap .content .c-right .c-r-banner #c-r-b-btn li{float: left;width: 7px;height: 7px;margin: 3px;border-radius: 50%;background: #eee;z-index: 1;cursor: pointer;}
+	.wrap .content .c-right .c-r-banner #c-r-b-btn .c-r-b-on{background: #f00;}
+	#c-r-b-left{position: absolute;right: 0;left: 0;top: 50%;margin-top: -23px;width: 30px;height: 46px;line-height:46px;text-align: center;font-size: 20px;color: #eee;z-index: 1;cursor: pointer;}
+	#c-r-b-right{position: absolute;right: 0;top: 50%;margin-top: -23px;width: 30px;height: 46px;line-height:46px;text-align: center;font-size: 20px;color: #eee;z-index: 1;cursor: pointer;}
+	#c-r-b-left:hover{background: rgba(225,225,225,.3);transition: .3s;}
+	#c-r-b-right:hover{background: rgba(225,225,225,.3);transition: .3s;}
+
+	/*热门评论*/
+	.wrap .content .c-right .c-r-review{width: 300px;height: 400px;background: #fafafa;margin-top: 30px;border-top: 2px solid #C3C3C3;}
+	.wrap .content .c-right .c-r-review .c-r-retit li{width:80px;height:40px;font-size: 16px;text-align: center;line-height: 40px;margin-right: 1px;cursor: pointer;}
+	.wrap .content .c-right .c-r-review .c-r-retit .lion{border-top: 2px solid #cd0001;margin-top: -2px;color: #ec5353;}
+	.wrap .content .c-right .c-r-review .c-r-recon{width: 300px;margin-top: 10px;}
+	.wrap .content .c-right .c-r-review .c-r-recon li{margin-bottom: 15px;font-size: 14px;}
+	.wrap .content .c-right .c-r-review .c-r-recon li span{display: inline-block;width: 20px;height: 20px;background: #cbcbcb;color: #fff;text-align: center;line-height: 20px;font-size: 14px;margin-right: 10px;}
+	.wrap .content .c-right .c-r-review .c-r-recon li .spanon{background: #EC5353;}
+	/*E c-right*/
+
+	/*Top按钮*/
+	#top{display: none;position: fixed;right: 10px;bottom: 30px;width: 50px;height: 50px;font-size: 26px;text-align: center;line-height: 50px;background: #000;color: #fff;cursor: pointer;}
+	#top:hover{background: #e55;transition: .3s;}
+
+	/*S footer*/
+	.wrap .footer{background: #eee;margin-top: 20px;padding-bottom: 20px;}
+	.wrap .footer .footer-con{width: 1000px;margin: 0 auto;}
+	.wrap .footer .footer-con .footer-con-partner{height: 40px;font-size: 18px;margin-top: 40px;line-height: 40px;}
+	.wrap .footer .footer-con .footer-con-partner > div:nth-child(2){font-size: 14px;cursor: pointer;}
+	.wrap .footer .footer-con .footer-con-partner > div > span{display: inline-block;width: 20px;height: 20px;background-image: url("images/icons_data.png");background-position: 1px -942px;vertical-align: middle;}
+	.wrap .footer .footer-con .footer-con-partner > div:nth-child(2):hover{color: #ec5353;}
+	.wrap .footer .footer-con .footer-con-partner > div:nth-child(2):hover span{background-position: 1px -988px;}
+	.wrap .footer .footer-con .f-par-con > div{font-size: 12px;color: #5f5f5f;margin: 10px 0;}
+	.wrap .footer .footer-con .f-par-con > div span:nth-child(1){font-size: 14px;color: #000;margin-right: 20px;}
+
+	.wrap .footer .footer-foot{color: #5f5f5f;text-align: center;border-top: 1px solid #e6e6e6;}
+	.wrap .footer .footer-foot > div{margin: 10px 0;}
+	/*E footer*/
+
+  </style>
+ </head>
+ <body
+	<div class="wrap">
+		<div class="content clearfix">
+		<!--S top-->
+			<div class="top clearfix">
+				<ul class="topL clearfix fl">
+					<li><a href="javascript:void(0);">腾讯网首页</a></li>
+					<li><a href="javascript:void(0);">新闻</a></li>
+					<li><a href="javascript:void(0);">财经</a></li>
+					<li><a href="javascript:void(0);">体育</a></li>
+					<li><a href="javascript:void(0);">娱乐</a></li>
+					<li><a href="javascript:void(0);">科技</a></li>
+					<li><a href="javascript:void(0);">更多 <span class="dropBtn"></span></a></li>
+					<li><a href="javascript:void(0);"><span>|</span>网站地图</a></li>
+					<li><a href="javascript:void(0);">帮助 <span class="dropBtn"></span></a></li>
+				</ul>
+				<ul class="topR fr clearfix">
+					<li><a href="javascript:void(0)">一键登录</a></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="ad">
+				<a href="javascript:void(0)"><img src="images/ad.png" width="1000" height="90" /></a>
+			</div>
+			<div class="clearfix">
+				<a href="#"><img class="vertical fl" src="images/logo.png" width="221" height="50" /></a>
+				<span class="c-rss fl">
+					<a href="javascript:void(0)">
+					<span class="c-icon"></span>
+					RSS</a>
+				</span>
+				<div class="c-find fr">
+					<input type="text" name="search" placeholder="双管夫妻同日生" />
+					<span class="c-search"></span>
+				</div>
+			</div>
+			<div class="c-nav">
+				<ul>
+					<li><a href="javascript:void(0)">首页</a></li>
+					<li><a href="javascript:void(0)">滚动</a></li>
+					<li><a href="javascript:void(0)">国际</a></li>
+					<li><a href="javascript:void(0)">社会</a></li>
+					<li><a href="javascript:void(0)">图片</a></li>
+					<li><a href="javascript:void(0)">视频</a></li>
+					<li><a href="javascript:void(0)">军事</a></li>
+					<li><a href="javascript:void(0)">评论</a></li>
+					<li><a href="javascript:void(0)">历史</a></li>
+					<li><a href="javascript:void(0)">文化</a></li>
+					<li><a href="javascript:void(0)">百科</a></li>
+					<li><a href="javascript:void(0)">公益</a></li>
+					<li><a href="javascript:void(0)">旅游</a></li>
+					<li><a href="javascript:void(0)">新闻哥</a></li>
+				</ul>
+			</div>
+		<!--E top-->
+		<!--S c-left-->
+			<div class="c-left fl clearfix">
+				<div class="c-header clearfix">
+					<span class="icons-data fl"></span>
+					<p class="fl">
+						<span>2017年04月13日</span>
+						<span>星期四</span>
+						<span class="fonthover">南昌市</span>
+						<img src="images/sun.png" width="16" height="16" />
+						<span class="fonthover">17℃</span>
+					</p>
+				</div>
+				<script>
+					var
+				</script>
+				<h2 class="fonthover">习近平到四川代表团参加审议</h2>
+				<div class="share"></div>
+				<div class="slist">
+					<ul class="borderB ">
+						<li class="fonthover"><span></span>图文记录习近平代表的一天</li>
+						<li class="fonthover"><span></span>李克强作2017年政府工作报告</li>
+					</ul>
+				</div>
+				<!--S 1图+1标题-->
+				<div class="c-news borderB clearfix bghover">
+					<div class="n-img fl overfl">
+						<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+					</div>
+					<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+					<div class="n-label">
+						<div class="n-share fr"></div>
+					</div>
+				</div>
+				<!--E 1图+1标题-->
+				<div class="c-news borderB clearfix bghover">
+					<div class="n-img fl overfl">
+						<a href="javascript:void(0);"><img class="imgHover" src="images/1.jpg" width="120" height="88" /></a>
+					</div>
+					<div class="n-tit fl fontHover">王毅回应“中美在南海是否必有一战”</div>
+					<div class="n-label">
+						<div class="n-share fr"></div>
+					</div>
+				</div>
+				<ul class="c-innews clearfix">
+					<li class="borderR">这件小事，影响你一辈子！</li>
+					<li class="borderR">三元“非凡匠心”</li>
+					<li class="borderR">远景SUV，幸福如7</li>
+					<li>泸州老窖国窖1573封藏大典</li>
+				</ul>
+				<div class="subNav clearfix">
+					<ul class="clearfix" id="subNav-list">
+						<li class="sn-on">要闻</li>
+						<li>财经</li>
+						<li>体育</li>
+						<li>娱乐</li>
+						<li>房产</li>
+						<li>科技</li>
+						<li>汽车</li>
+						<li>更多</li>
+					</ul>
+
+					<div style="display: block;">
+						<!--S 标题+横向3图片-->
+						<div class="l-con bghover">
+							<p class="fontHover"><span style="font-size: 18px;color: red;font-weight: 700;">1111</span>辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<!--E 标题+横向3图片-->
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<!--S 标题+横向3图片-->
+						<div class="l-con bghover">
+							<p class="fontHover"><span style="font-size: 18px;color: red;font-weight: 700;">2222</span>辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<!--E 标题+横向3图片-->
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<!--S 标题+横向3图片-->
+						<div class="l-con bghover">
+							<p class="fontHover"><span style="font-size: 18px;color: red;font-weight: 700;">3333</span>辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<!--E 标题+横向3图片-->
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<!--S 标题+横向3图片-->
+						<div class="l-con bghover">
+							<p class="fontHover"><span style="font-size: 18px;color: red;font-weight: 700;">4444</span>辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<!--E 标题+横向3图片-->
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<!--S 标题+横向3图片-->
+						<div class="l-con bghover">
+							<p class="fontHover"><span style="font-size: 18px;color: red;font-weight: 700;">5555</span>辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<!--E 标题+横向3图片-->
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<!--S 标题+横向3图片-->
+						<div class="l-con bghover">
+							<p class="fontHover"><span style="font-size: 18px;color: red;font-weight: 700;">6666</span>辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<!--E 标题+横向3图片-->
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<!--S 标题+横向3图片-->
+						<div class="l-con bghover">
+							<p class="fontHover"><span style="font-size: 18px;color: red;font-weight: 700;">7777</span>辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<!--E 标题+横向3图片-->
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<!--S 标题+横向3图片-->
+						<div class="l-con bghover">
+							<p class="fontHover"><span style="font-size: 18px;color: red;font-weight: 700;">8888</span>辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<!--E 标题+横向3图片-->
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="l-con bghover">
+							<p class="fontHover">辣妈一年瘦231斤 直播分享减肥获6万余粉丝</p>
+							<ul class="clearfix">
+								<li class="fl overfl"><img class="img imgHover" src="images/2.jpg" width="200" height="133" /></li>
+								<li class="fl overfl"><img class="img imgHover" src="images/3.jpg" width="200" height="133" /></li>
+								<li class="fr overfl"><img class="img imgHover" src="images/4.jpg" width="200" height="133" /></li>
+							</ul>
+							<div class="t-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+						<div class="c-news borderB clearfix bghover">
+							<div class="n-img fl overfl">
+								<a href="javascript:void(0);"><img class="imgHover" src="images/0.jpg" width="120" height="88" /></a>
+							</div>
+							<div class="n-tit fl fontHover">外交部长王毅谈朝鲜半岛局势：动武不是出路</div>
+							<div class="n-label">
+								<div class="n-share fr"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--S 视频-->
+				<div class="l-c-tit clearfix">
+					<div class="fl">
+						<span>热门视频</span>
+					</div>
+					<a href="javascript:void(0)">更多</a>
+				</div>
+				<div class="l-c-con">
+					<ul class="clearfix">
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/5.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>习近平：所有扶贫地区的领导干部都要坚守岗</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/6.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>巴萨实现奇迹上演惊天逆转</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/7.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>向流浪汉买他们的狗会怎样</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/8.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>尹正与张蓝心恋情曝光</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/9.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>萨德系统的危害有多大？</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/10.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>谁说军训是女星的黑历史？</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/11.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>戚薇竟然完美驾驭了红配绿</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/12.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>12岁少年唱《如果云知道》</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="l-c-tit clearfix">
+					<div class="fl">
+						<span>最新视频</span>
+					</div>
+					<a href="javascript:void(0)">更多</a>
+				</div>
+				<div class="l-c-con">
+					<ul class="clearfix">
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/5.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>习近平：所有扶贫地区的领导干部都要坚守岗</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/6.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>巴萨实现奇迹上演惊天逆转</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/7.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>向流浪汉买他们的狗会怎样</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/8.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>尹正与张蓝心恋情曝光</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/9.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>萨德系统的危害有多大？</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/10.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>谁说军训是女星的黑历史？</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/11.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>戚薇竟然完美驾驭了红配绿</p>
+							</a>
+						</li>
+						<li class="bghover">
+							<a href="javascript:void(0);">
+								<div>
+									<img src="images/12.jpg" width="154" height="90" />
+									<div class="play"></div>
+								</div>
+								<p>12岁少年唱《如果云知道》</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--E 新闻-->
+				<div class="l-c-tit clearfix">
+					<div class="fl">
+						<span>军事</span>
+					</div>
+					<a href="javascript:void(0)">更多</a>
+				</div>
+				<div class="l-war clearfix">
+					<ul class="l-w-img fl clearfix">
+						<li class="clearfix">
+							<a class="w-img-a " href="javascript:void(0);">
+								<img class="imgHover img" src="images/13.jpg" width="275" height="142" />
+							</a>
+							<a class="fontHover" href="javascript:void(0);">美韩对中国“刹车”提议不买账 要求</a>
+						</li>
+						<li>
+							<a class="w-img-a a-img" href="javascript:void(0);">
+								<img class="imgHover img" src="images/14.jpg" width="130" height="104" alt="" />
+							</a>
+							<a class="fontHover" href="javascript:void(0);">中国海军少将：我们在南海逢舰必跟、来机必</a>
+						</li>
+						<li>
+							<a class="w-img-a" href="javascript:void(0);">
+								<img class="imgHover img" src="images/15.jpg" width="130" height="104" />
+							</a>
+							<a class="fontHover" href="javascript:void(0);">美媒：中美南海对抗或擦枪走火，美将遭猛烈</a>
+						</li>
+						<li>
+							<a class="w-img-a" href="javascript:void(0);">
+								<img class="imgHover img" src="images/16.jpg" width="130" height="104" />
+							</a>
+							<a class="fontHover" href="javascript:void(0);">普京又解除10名将军职务，1个月前刚解职16</a>
+						</li>
+						<li>
+							<a class="w-img-a" href="javascript:void(0);">
+								<img class="imgHover img" src="images/17.jpg" width="130" height="104" />
+							</a>
+							<a class="fontHover" href="javascript:void(0);">中国海军少将：我们在南海逢舰必跟、来机必</a>
+						</li>
+					</ul>
+					<ul class="l-w-list fr">
+						<li class="fontHover">中科院造出仿生眼 有望与人脑芯片结合引爆人工智</li>
+						<li class="fontHover">美称朝鲜可同时发射36枚导弹，萨德拦不住</li>
+						<li class="fontHover">美韩日军事动作不断 日防相称不排除提前破坏朝导</li>
+						<li class="fontHover">央视首次公开证实：歼20隐身战机已进入空军服役</li>
+						<li class="fontHover">运20总师：最快明年，就能看到胖妞换上国产发动</li>
+						<li class="fontHover">菲国防部长臆测中国为潜艇寻安置点 称如再发现将</li>
+						<li class="fontHover">极端势力节节败退 其领导人巴格达迪久未露面行踪</li>
+						<li class="fontHover">警惕战略思维的盲区：为何我们常常错看小国</li>
+						<li class="fontHover">缅北流弹落入中国1人受伤 2万缅甸边民涌入避战</li>
+					</ul>
+				</div>
+				<div class="l-c-tit clearfix">
+					<div class="fl">
+						<span>社会</span>
+					</div>
+					<a href="javascript:void(0)">更多</a>
+				</div>
+				<div class="l-war clearfix">
+					<ul class="l-w-img fl clearfix">
+						<li class="clearfix">
+							<a class="w-img-a " href="javascript:void(0);">
+								<img class="imgHover img" src="images/13.jpg" width="275" height="142" />
+							</a>
+							<a class="fontHover" href="javascript:void(0);">美韩对中国“刹车”提议不买账 要求</a>
+						</li>
+						<li>
+							<a class="w-img-a a-img" href="javascript:void(0);">
+								<img class="imgHover img" src="images/14.jpg" width="130" height="104" alt="" />
+							</a>
+							<a class="fontHover" href="javascript:void(0);">中国海军少将：我们在南海逢舰必跟、来机必</a>
+						</li>
+						<li>
+							<a class="w-img-a" href="javascript:void(0);">
+								<img class="imgHover img" src="images/15.jpg" width="130" height="104" />
+							</a>
+							<a class="fontHover" href="javascript:void(0);">美媒：中美南海对抗或擦枪走火，美将遭猛烈</a>
+						</li>
+						<li>
+							<a class="w-img-a" href="javascript:void(0);">
+								<img class="imgHover img" src="images/16.jpg" width="130" height="104" />
+							</a>
+							<a class="fontHover" href="javascript:void(0);">普京又解除10名将军职务，1个月前刚解职16</a>
+						</li>
+						<li>
+							<a class="w-img-a" href="javascript:void(0);">
+								<img class="imgHover img" src="images/17.jpg" width="130" height="104" />
+							</a>
+							<a class="fontHover" href="javascript:void(0);">中国海军少将：我们在南海逢舰必跟、来机必</a>
+						</li>
+					</ul>
+					<ul class="l-w-list fr">
+						<li class="fontHover">中科院造出仿生眼 有望与人脑芯片结合引爆人工智</li>
+						<li class="fontHover">美称朝鲜可同时发射36枚导弹，萨德拦不住</li>
+						<li class="fontHover">美韩日军事动作不断 日防相称不排除提前破坏朝导</li>
+						<li class="fontHover">央视首次公开证实：歼20隐身战机已进入空军服役</li>
+						<li class="fontHover">运20总师：最快明年，就能看到胖妞换上国产发动</li>
+						<li class="fontHover">菲国防部长臆测中国为潜艇寻安置点 称如再发现将</li>
+						<li class="fontHover">极端势力节节败退 其领导人巴格达迪久未露面行踪</li>
+						<li class="fontHover">警惕战略思维的盲区：为何我们常常错看小国</li>
+						<li class="fontHover">缅北流弹落入中国1人受伤 2万缅甸边民涌入避战</li>
+					</ul>
+				</div>
+				<div class="l-c-tit clearfix">
+					<div class="fl">
+						<span>历史</span>
+					</div>
+					<a href="javascript:void(0)">更多</a>
+				</div>
+				<div class="l-c-history clearfix">
+					<ul class="h-img fl">
+						<li class="overfl">
+							<img class="imgHover" src="images/18.jpg" width="275" height="168" alt="" />
+						</li>
+						<li><a class="fontHover" href="javascript:void(0);" title="最近新出现的“孙中山嫡孙”，是真的嘛?">最近新出现的“孙中山嫡孙”，是真</a></li>
+					</ul>
+					<ul class="h-tit fr">
+						<li class="fontHover">生死有命：刘粹刚许希麟的1935</li>
+						<li class="fontHover">张学良在台湾“求问自由”始末</li>
+						<li class="fontHover">十月革命后海参崴的中国妓女救赎</li>
+						<li class="fontHover">楚国名臣申叔时，为何能够预言历史走向？</li>
+						<li class="fontHover">宇文北周：一个奠定隋唐盛世前奏的悲情朝代</li>
+					</ul>
+				</div>
+
+				<div class="l-c-tit clearfix">
+					<div class="fl">
+						<span>传媒</span>
+					</div>
+					<a href="javascript:void(0)">更多</a>
+				</div>
+				<div class="l-c-history clearfix">
+					<ul class="h-img fl">
+						<li class="overfl">
+							<img class="imgHover" src="images/18.jpg" width="275" height="168" alt="" />
+						</li>
+						<li><a class="fontHover" href="javascript:void(0);" title="最近新出现的“孙中山嫡孙”，是真的嘛?">最近新出现的“孙中山嫡孙”，是真</a></li>
+					</ul>
+					<ul class="h-tit fr">
+						<li class="fontHover">生死有命：刘粹刚许希麟的1935</li>
+						<li class="fontHover">张学良在台湾“求问自由”始末</li>
+						<li class="fontHover">十月革命后海参崴的中国妓女救赎</li>
+						<li class="fontHover">楚国名臣申叔时，为何能够预言历史走向？</li>
+						<li class="fontHover">宇文北周：一个奠定隋唐盛世前奏的悲情朝代</li>
+					</ul>
+				</div>
+
+				<div class="l-c-tit clearfix">
+					<div class="fl">
+						<span>公益</span>
+					</div>
+					<a href="javascript:void(0)">更多</a>
+				</div>
+				<div class="l-c-history clearfix">
+					<ul class="h-img fl">
+						<li class="overfl">
+							<img class="imgHover" src="images/18.jpg" width="275" height="168" alt="" />
+						</li>
+						<li><a class="fontHover" href="javascript:void(0);" title="最近新出现的“孙中山嫡孙”，是真的嘛?">最近新出现的“孙中山嫡孙”，是真</a></li>
+					</ul>
+					<ul class="h-tit fr">
+						<li class="fontHover">生死有命：刘粹刚许希麟的1935</li>
+						<li class="fontHover">张学良在台湾“求问自由”始末</li>
+						<li class="fontHover">十月革命后海参崴的中国妓女救赎</li>
+						<li class="fontHover">楚国名臣申叔时，为何能够预言历史走向？</li>
+						<li class="fontHover">宇文北周：一个奠定隋唐盛世前奏的悲情朝代</li>
+					</ul>
+				</div>
+				<div class="l-c-tit clearfix">
+					<div class="fl">
+						<span>城市</span>
+					</div>
+					<a href="javascript:void(0)">更多</a>
+				</div>
+				<div class="l-c-history clearfix">
+					<ul class="h-img fl">
+						<li class="overfl">
+							<img class="imgHover" src="images/18.jpg" width="275" height="168" alt="" />
+						</li>
+						<li><a class="fontHover" href="javascript:void(0);" title="最近新出现的“孙中山嫡孙”，是真的嘛?">最近新出现的“孙中山嫡孙”，是真</a></li>
+					</ul>
+					<ul class="h-tit fr">
+						<li class="fontHover">生死有命：刘粹刚许希麟的1935</li>
+						<li class="fontHover">张学良在台湾“求问自由”始末</li>
+						<li class="fontHover">十月革命后海参崴的中国妓女救赎</li>
+						<li class="fontHover">楚国名臣申叔时，为何能够预言历史走向？</li>
+						<li class="fontHover">宇文北周：一个奠定隋唐盛世前奏的悲情朝代</li>
+					</ul>
+				</div>
+				<!---->
+
+				<div class="l-footer clearfix">
+					<ul class="clearfix">
+						<li class="clearfix">
+							<div class="l-f-tit fl">
+								<span>热门视频</span>
+							</div>
+						</li>
+						<li class="fontHover">新华社客户端4.0版上线 启动智能引擎</li>
+						<li class="clearfix">
+							<div class="fl">
+								<img src="images/19.jpg" width="130" height="85" alt="" />
+							</div>
+							<div class="l-f-r fr">在新版本中，不仅优化了“现场新闻”功能，还推出了“智能引擎”。</div>
+						</li>
+						<li class="fontHover"><span class="dot"></span>2017第三届海归中国梦年度盛典在京举行</li>
+						<li class="fontHover"><span class="dot"></span>第二届单向街·书店文学奖颁奖典礼落幕</li>
+					</ul>
+					<ul class="clearfix">
+						<li class="clearfix">
+							<div class="l-f-tit fl">
+								<span>热门视频</span>
+							</div>
+						</li>
+						<li class="fontHover">新华社客户端4.0版上线 启动智能引擎</li>
+						<li class="clearfix">
+							<div class="fl">
+								<img src="images/19.jpg" width="130" height="85" alt="" />
+							</div>
+							<div class="l-f-r fr">在新版本中，不仅优化了“现场新闻”功能，还推出了“智能引擎”。</div>
+						</li>
+						<li class="fontHover"><span class="dot"></span>2017第三届海归中国梦年度盛典在京举行</li>
+						<li class="fontHover"><span class="dot"></span>第二届单向街·书店文学奖颁奖典礼落幕</li>
+					</ul>
+				</div>
+			</div>
+		<!--E c-left-->
+
+		<!--S c-right-->
+			<div class="c-right fr clearfix">
+				<div class="c-r-tit">
+					<div class="c-r-logo">
+						<a href="javascript:void(0);"><img src="images/jrhtLogo.png" width="105" height="28" alt="" />
+					</div>
+					<ul>
+						<li class="fontHover">中国孩子要远离疫苗是谣言</li>
+						<li>
+							<a href="javascript:void(0);"><img src="images/21.jpg" width="135" height="100" alt="" /></a>
+							<span>
+								必须旗帜鲜明的指出，反疫苗言论是不折不扣的造谣。
+								<a href="javascript:void(0);">[详细]</a>
+							</span>
+						</li>
+						<li>
+							<span class="dot"></span>
+							<a class="fontHover" href="javascript:void(0);">历史</a>
+							<span>|</span>
+							<a class="fontHover" href="javascript:void(0);">新出现“孙中山嫡孙”是真的吗</a>
+						</li>
+						<li>
+							<span class="dot"></span>
+							<a class="fontHover" href="javascript:void(0);">评论</a>
+							<span>|</span>
+							<a class="fontHover" href="javascript:void(0);"> 直面难题，让环境治理更有成效</a>
+						</li>
+						<li>
+							<span class="dot"></span>
+							<a class="fontHover" href="javascript:void(0);">让个人信息保护“更上层楼”</a>
+						</li>
+						<li>
+							<span class="dot"></span>
+							<a class="fontHover" href="javascript:void(0);">以民法总则巩固改革成果</a>
+						</li>
+					</ul>
+				</div>
+				<!--S 影响力-->
+				<div class="c-r-banner">
+					<div class="c-r-logo">
+						<a href="javascript:void(0);"><img src="images/yxl.png" width="86" height="34" alt="" /></a>
+					</div>
+					<div class="c-r-ban">
+						<ul id="c-r-b-img">
+							<li style="display: block;"><a href="javascript:void(0)"><img src="images/r-ban1.jpg" /></a></li>
+							<li><a href="javascript:void(0)"><img src="images/r-ban2.jpg" /></a></li>
+							<li><a href="javascript:void(0)"><img src="images/r-ban3.jpg" /></a></li>
+							<li><a href="javascript:void(0)"><img src="images/r-ban4.jpg" /></a></li>
+							<li><a href="javascript:void(0)"><img src="images/r-ban5.jpg" /></a></li>
+						</ul>
+						<ul id="c-r-b-btn">
+							<li class="c-r-b-on"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<div id="c-r-b-left">&lt;</div>
+						<div id="c-r-b-right">&gt;</div>
+					</div>
+				</div>
+				<!--E 影响力-->
+				<div class="c-r-review">
+					<ul class="c-r-retit clearfix">
+						<li class="fl lion">热度排行</li>
+						<li class="fl">评论排行</li>
+					</ul>
+					<div class="c-r-recon">
+						<ul>
+							<li class="fontHover"><span class="spanon">1</span>女子失踪15年 疑成卖唱残疾人</li>
+							<li class="fontHover"><span class="spanon">2</span>深圳查630吨走私冻品 部分来自疫区</li>
+							<li class="fontHover"><span class="spanon">3</span>白百何密会神秘男 泳池边超亲昵互动</li>
+							<li class="fontHover"><span>4</span>刘亦菲被曝怀孕 即将与宋承宪大婚？</li>
+							<li class="fontHover"><span>5</span>公交刹车失灵 司机撞墙强行停下</li>
+							<li class="fontHover"><span>6</span>27岁女子毁容换脸 医生在其胸部造脸</li>
+							<li class="fontHover"><span>7</span>快成为中国媳妇！秋瓷炫晒素颜男友抢</li>
+							<li class="fontHover"><span>8</span>揭秘“五行币”传销：女子剃光头当助</li>
+							<li class="fontHover"><span>9</span>男子婚前将别墅过户给女友 女友：只能</li>
+							<li class="fontHover"><span>10</span>特朗普儿子：受姐姐伊万卡影响美国作</li>
+						</ul>
+						<ul style="display: none;">
+							<li class="fontHover"><span class="spanon">1</span>离家77年 97岁台湾老兵找到亲人</li>
+							<li class="fontHover"><span class="spanon">2</span>女子失踪15年 疑成卖唱残疾人</li>
+							<li class="fontHover"><span class="spanon">3</span>“中国最大观景台”牛背山变垃圾山</li>
+							<li class="fontHover"><span>4</span>李明哲妻子欲来大陆探视台胞证却被注</li>
+							<li class="fontHover"><span>5</span>朝鲜最豪华酒店火灾后再营业 内景曝光</li>
+							<li class="fontHover"><span>6</span>朝鲜庆祝金正恩当选第一书记5周年</li>
+							<li class="fontHover"><span>7</span>留美学生讲述留学经历：花费400万 回</li>
+							<li class="fontHover"><span>8</span>菲渔民黄岩岛捕鱼 中国海警在旁巡弋</li>
+							<li class="fontHover"><span>9</span>“魏则西之死”一周年：“免疫治疗</li>
+							<li class="fontHover"><span>10</span>陆运萨德被村民阻拦 韩国调来8架直升机</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<!--E c-right-->
+		</div>
+
+		<!--S ad-->
+		<div class="c-top">
+		</div>
+		<div class="w-nav">
+		</div>
+		<!--E ad-->
+		<!--广告-->
+		<div style="text-align: center;margin: 10px 0;"><a href="javascript:void(0);"><img src="images/ad.gif" width="1000" height="90" alt=""></a></div>
+		<!--S footer-->
+		<div class="footer">
+			<div class="footer-con">
+				<div class="footer-con-partner clearfix">
+					<div class="fl">合作伙伴</div>
+					<div class="fr">显示全部<span></span></div>
+				</div>
+				<div class="f-par-con">
+					<div>
+						<span>部委网站</span>
+						<span class="fontHover">公安部</span> |
+						<span class="fontHover"> 中纪委 </span> |
+						<span class="fontHover">发改委 </span> |
+						<span class="fontHover">人社部 </span> |
+						<span class="fontHover">国土资源部 </span> |
+						<span class="fontHover">安监总局 </span> |
+						<span class="fontHover">文化部 </span> |
+						<span class="fontHover">环保部 </span> |
+						<span class="fontHover">卫计委 </span> |
+						<span class="fontHover"> 药监局  </span> |
+						<span class="fontHover"> 中国禁毒网 </span> |
+						<span class="fontHover">中国网信网 </span> |
+						<span class="fontHover">中国铁路总公司</span>
+					</div>
+					<div>
+						<span>中央媒体</span>
+						<span class="fontHover">中国政府网</span> |
+						<span class="fontHover">  人民网 </span> |
+						<span class="fontHover"> 新华网 </span> |
+						<span class="fontHover"> 光明网 </span> |
+						<span class="fontHover"> 央视网 </span> |
+						<span class="fontHover"> 环球网 </span> |
+						<span class="fontHover"> 中新网 </span> |
+						<span class="fontHover"> 中国网 </span> |
+						<span class="fontHover"> 中青网 </span> |
+						<span class="fontHover">  中经网  </span> |
+						<span class="fontHover">  中国台湾网 </span> |
+						<span class="fontHover"> 正义网 </span> |
+						<span class="fontHover"> 中国日报网</span>
+						<span class="fontHover"> 海外网</span>
+						<span class="fontHover">  凯风网</span>
+						<span class="fontHover"> 中青在线</span>
+					</div>
+					<div>
+						<span>北京地区</span>
+						<span class="fontHover">京报网</span> |
+						<span class="fontHover"> 北青网  </span> |
+						<span class="fontHover">法制晚报 </span> |
+						<span class="fontHover">世界新闻报 </span> |
+						<span class="fontHover">华夏时报 </span> |
+						<span class="fontHover">千龙网 </span> |
+						<span class="fontHover"> 首都之窗 </span> |
+						<span class="fontHover"> 人民论坛网 </span> |
+						<span class="fontHover"> 参考消息 </span> |
+						<span class="fontHover"> 中国社会科学网  </span> |
+						<span class="fontHover"> 京华时报 </span> |
+					</div>
+				</div>
+				<div class="footer-foot">
+					<div>
+						<span class="fontHover">关于腾讯 </span> |
+						<span class="fontHover">About Tencent </span> |
+						<span class="fontHover">服务协议 </span> |
+						<span class="fontHover">隐私政策 </span> |
+						<span class="fontHover">开放平台 </span> |
+						<span class="fontHover">广告服务 </span> |
+						<span class="fontHover">腾讯招聘 </span> |
+						<span class="fontHover"> 腾讯公益 </span> |
+						<span class="fontHover">客服中心 </span> |
+						<span class="fontHover">举报中心 </span> |
+						<span class="fontHover">网站导航 </span> |
+					</div>
+					<div>
+						Copyright © 1998 - 2017 Tencent. All Rights Reserved
+					</div>
+					<div>
+						腾讯公司 版权所有
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--E footer-->
+		<!--Top按钮-->
+		<div id="top">Top</div>
+	</div>
+	<!--Top-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(window).scroll(function(){
+    			if($(this).scrollTop() >= 300){
+    				$("#top").show();
+    			}else{
+    				$("#top").hide();
+    			}
+    		});
+			$("#top").click(function(){
+				$("html,body").animate({"scrollTop": 0},300);
+			});
+    	});
+    </script>
+
+
+	<script type="text/javascript">
+		window.onload = function(){
+
+			/*S 左边内容选项卡*/
+			var oList = document.querySelectorAll(".subNav #subNav-list li");
+			var sncon = document.querySelectorAll(".subNav > div");
+			for(var i=0;i<oList.length;i++){
+				oList[i].index = i;
+				oList[i].onmouseover = function(){
+					for(var j=0;j<oList.length;j++){
+						oList[j].className = "";
+						sncon[j].style.display = "none";
+					}
+					this.className = "sn-on";
+					sncon[this.index].style.display = "block";
+				}
+			}
+			/*E 左边内容选项卡*/
+
+			/*右侧小banner*/
+			var rImg = document.getElementById("c-r-b-img").getElementsByTagName("li");;
+			var rBtn = document.getElementById("c-r-b-btn").getElementsByTagName("li");
+			var rLeft = document.getElementById("c-r-b-left");
+			var rRight = document.getElementById("c-r-b-right");
+			var num = 0;
+			for(var i=0;i<rBtn.length;i++){
+				rBtn[i].index = i;
+				/*点击按钮切换*/
+				rBtn[i].onclick = function(){
+					for(var j=0;j<rBtn.length;j++){
+						rBtn[j].className = "";
+						rImg[j].style.display = "none";
+					}
+					this.className = "c-r-b-on";
+					rImg[this.index].style.display = "block";
+					num = this.index;
+					// cindex = this.index;
+				}
+			}
+			/*点击左右切换*/
+			rLeft.onclick = function(){
+				if(num<1){
+					num = rBtn.length-1;
+				}else{
+					num--;
+				}
+				for(var j=0;j<rBtn.length;j++){
+					rBtn[j].className = "";
+					rImg[j].style.display = "none";
+				}
+				rBtn[num].className = "c-r-b-on";
+				rImg[num].style.display = "block";
+			}
+
+			rRight.onclick = function(){
+				if(num<rBtn.length-1){
+					num++;
+				}else{
+					num = 0;
+				}
+				for(var j=0;j<rBtn.length;j++){
+					rBtn[j].className = "";
+					rImg[j].style.display = "none";
+				}
+				rBtn[num].className = "c-r-b-on";
+				rImg[num].style.display = "block";
+			}
+		/*定时器*/
+			// var cindex = 0;
+			var time = null;
+			function autoplay(){
+				if(num<rBtn.length-1){
+					num++;
+				}else{
+					num = 0;
+				}
+				for(var j=0;j<rBtn.length;j++){
+					rBtn[j].className = "";
+					rImg[j].style.display = "none";
+				}
+				rBtn[num].className = "c-r-b-on";
+				rImg[num].style.display = "block";
+			}
+			time = setInterval(autoplay,1000);
+			var cbox = document.querySelector(".c-r-banner");
+			cbox.onmouseover = function(e){
+
+				clearInterval(time);
+			}
+			cbox.onmouseout = function(){
+				time = setInterval(autoplay,1000);
+			}
+
+		/*右侧热门评论*/
+			var relist = document.querySelectorAll(".c-r-retit li");
+			var reconcon = document.querySelectorAll(".c-r-recon ul")
+			for(var i=0;i<relist.length;i++){
+				relist[i].index = i;
+				relist[i].onmouseover = function(){
+					for(var j=0;j<relist.length;j++){
+						relist[j].className = "fl";
+						reconcon[j].style.display = "none";
+					}
+					this.className = "fl lion";
+					reconcon[this.index].style.display = "block";
+				}
+			}
+		}
+	</script>
+ </body>
+</html>

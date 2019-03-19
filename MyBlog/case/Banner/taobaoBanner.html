@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+    *{margin:0px;padding:0px;}
+    body{font-size:12px;font-family:"微软雅黑";color:#000;}
+    a{text-decoration:none;}
+    li{list-style:none;}
+    /*S banner*/
+    #banner{position:relative;width:520px;height:280px;margin:30px auto;overflow: hidden;}
+    #banner .pic ul{position: absolute;top: 0;left: -520px;width:1000%;}
+    #banner .pic ul li{float:left;}
+    #banner .btn ul{position:absolute;top:260px;left:50%;margin-left:-40px;width:80px;height:10px;background:rgba(255,255,255,0.3);}
+    #banner .btn ul li{float:left;width:10px;height:10px;border-radius:50%;margin-left:5px;background:#ccc;cursor: pointer;}
+    #banner .btn ul .on{background:#f60;}
+
+    #banner .tab div{width:24px;height:32px;background:rgba(0,0,0,0.3);position:absolute;font-size:26px;color:#e5e5e5;font-weight:bold;text-align:center;line-height:36px;top:50%;margin-top:-18px;cursor:pointer;}
+    #leftBtn{left:0;}
+    #rightBtn{right:0;}
+    #banner .tab div:hover{background:rgba(0,0,0,0.6);}
+    /*E banner*/
+  </style>
+ </head>
+ <body>
+    <div id="banner">
+        <div class="pic">
+            <ul>
+                <li><img src="images/5.jpg" width="520" height="280" /></li>
+                <li><img src="images/1.jpg" width="520" height="280" /></li>
+                <li><img src="images/2.jpg" width="520" height="280" /></li>
+                <li><img src="images/3.jpg" width="520" height="280" /></li>
+                <li><img src="images/4.jpg" width="520" height="280" /></li>
+                <li><img src="images/5.jpg" width="520" height="280" /></li>
+                <li><img src="images/1.jpg" width="520" height="280" /></li>
+            </ul>
+        </div>
+        <div class="btn">
+            <ul>
+                <li class="on"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="tab">
+            <div id="leftBtn">&lt;</div>
+            <div id="rightBtn">&gt;</div>
+        </div>
+    </div>
+    <script src="js/move.js"></script>
+    <script type="text/javascript">
+        var ban = document.getElementById("banner");
+        var ul = document.querySelector(".pic ul");
+        var li = ul.getElementsByTagName("li");
+        var btn = document.querySelectorAll(".btn ul li");
+        var left = document.getElementById("leftBtn")
+        var right = document.getElementById("rightBtn")
+        var imgW = document.querySelectorAll(".pic ul li img")[0].offsetWidth;
+        var timer = null;
+        var num = 0;
+        var cindex = 1;
+        var date = new Date();
+        /*按钮切换*/
+        for(var i =0;i<btn.length;i++){
+            btn[i].index = i;
+            btn[i].onclick = function(){
+                for(var j =0;j<btn.length;j++){
+                    btn[j].className = "";
+                }
+                this.className = "on";
+                move(ul,{left:-imgW*(this.index+1)});   // this.index+1
+                num = this.index;
+                cindex = this.index+1;  //图片索引与按钮索引的关系 由于最前面多了一张图片
+            }
+            // 左右按钮切换
+            right.onclick = function(){
+                if(new Date() - date > 800){
+                    date = new Date();
+                    num++;
+                    cindex++;
+                    num %= btn.length;
+                    cindex %= li.length;
+                    for(var i=0;i<btn.length;i++){
+                        btn[i].className = "";
+                    }
+                    btn[num].className = "on";
+                    move(ul,{left:-imgW*(cindex)},function(){
+                        if(cindex == li.length-1){
+                            cindex = 1;
+                            this.style.left = -imgW*(cindex) +"px";
+                        }
+                    });
+                }
+            }
+            left.onclick = function(){
+                if(new Date() - date > 800){
+                    date = new Date();
+                    num--;
+                    cindex--;
+                    if(num<0)num = btn.length-1;
+                    for(var i=0;i<btn.length;i++){
+                        btn[i].className = "";
+                    }
+                    btn[num].className = "on";
+                    move(ul,{left:-imgW*(cindex)},function(){
+                        if(cindex == 0){
+                            cindex = 5;
+                            this.style.left = -imgW*(cindex) +"px";
+                        }
+                    });
+                }
+            }
+        }
+        timer = setInterval(auto,2000);
+        banner.onmouseover = function(){
+            clearInterval(timer);
+        }
+        banner.onmouseout = function(){
+            timer = setInterval(auto,2000);
+        }
+        function auto(){
+            num++;
+            cindex++;
+            num %= btn.length;
+            cindex %= li.length;
+            for(var i=0;i<btn.length;i++){
+                btn[i].className = "";
+            }
+            btn[num].className = "on";
+            move(ul,{left:-imgW*(cindex)},function(){
+                if(cindex == li.length-1){
+                    cindex = 1;
+                    this.style.left = -imgW*(cindex) +"px";
+                }
+            });
+        }
+    </script>
+ </body>
+</html>

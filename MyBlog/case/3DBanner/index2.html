@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css" id="css">
+	*{margin:0px;padding:0px;}
+	body{font-size:12px;font-family:"微软雅黑";color:#000;}
+	a{text-decoration:none;}
+	li{list-style:none;}
+	#banner{width:595px;height:340px;margin:300px auto;perspective:800px;background:pink;position:relative;}
+	#banner ul li{width:118px;height:340px;float:left;transform-style:preserve-3d;transition:4s;position:relative;}
+	#banner ul li div{width:119px;height:340px;position:absolute;}
+
+	/*找到上面*/
+	#banner ul li
+	div:nth-child(6){bottom:340px;transform-origin:bottom;transform:rotateX(90deg) translateY(170px);background-image:url("images/1.jpg");}
+	/*找到下面*/
+	#banner ul li div:nth-child(5){top:340px;transform-origin:top;transform:rotateX(-90deg) translateY(-170px);background-image:url("images/2.jpg");}
+	/*找到后面*/
+	#banner ul li div:nth-child(2){transform:rotateX(180deg) translateZ(170px);background-image:url("images/3.jpg");}
+	/*找到前面*/
+	#banner ul li div:nth-child(1){transform:translateZ(170px) ;background-image:url("images/4.jpg");}
+
+
+	/*改变背景图片位置*/
+	#banner ul li:nth-child(1) div{background-position:0;}
+	#banner ul li:nth-child(2) div{background-position:-118px;}
+	#banner ul li:nth-child(3) div{background-position:-236px;}
+	#banner ul li:nth-child(4) div{background-position:-354px;}
+	#banner ul li:nth-child(5) div{background-position:-471px;}
+	/*延时加载*/
+	#banner ul li:nth-child(1){transition:2s 0s;}
+	#banner ul li:nth-child(2){transition:2s 0.1s;}
+	#banner ul li:nth-child(3){transition:2s 0.2s;}
+	#banner ul li:nth-child(4){transition:2s 0.3s;}
+	#banner ul li:nth-child(5){transition:2s 0.4s;}
+	/*布局小按钮*/
+	#banner ol{width:120px;height:30px;position:absolute;bottom:-30px;right:-50px;}
+	#banner ol li{width:20px;height:20px;text-align:center;line-height:20px;border-radius:50%;background:gray;float:left;margin:5px 5px;cursor:pointer;}
+	#banner ol .on{background:#f60;color:#fff;}
+  </style>
+ </head>
+ <body>
+	<div id="banner">
+		<ul>
+			<li>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+			<li>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+			<li>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+			<li style="z-index:-1;">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+			<li style="z-index:-2;">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+		</ul>
+		<ol>
+			<li class="on">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ol>
+	</div>
+	<script type="text/javascript">
+		window.onload = function(){
+			var ol = document.getElementsByTagName("ol");
+			var ul = document.getElementsByTagName("ul");
+			var oli = ol[0].getElementsByTagName("li");
+			var uli = ul[0].getElementsByTagName("li");
+			var ocss = document.querySelector("#css");
+			for(var i=0;i<oli.length;i++){
+				//动态绑定
+				oli[i].index = i;
+				oli[i].onclick = function(){
+					clearInterval("time");
+					ocss.innerHTML +="#banner ul li{transform:rotateX("+this.index*90+"deg);}";
+					for(var j=0;j<oli.length;j++){
+						oli[j].className = "";
+					}
+					this.className = "on";
+					num = this.index;
+				}
+			}
+			var num=0;
+			var time = setInterval(function(){
+				num++;
+				if(num>3){
+					num = 0;
+				}
+				ocss.innerHTML +="#banner ul li{transform:rotateX("+num*90+"deg);}";
+				for(var j=0;j<oli.length;j++){
+						oli[j].className = "";
+					}
+				oli[num].className = "on";
+				uli[num].onmouseover = function(){
+					clearInterval(time);
+				}
+			},4000);
+		}
+	</script>
+ </body>
+</html>
